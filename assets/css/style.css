@@ -1,7 +1,7 @@
 body {
   	background-color: black;
   	color: #55ff55;
-  	font-family: Consolas;
+  	font-family: monospace;
   	font-size: 14px;
 }
 .output {
