@@ -9,7 +9,7 @@ var commands = [
 	},{
 		input: 'tail -f ./skills',
 		output: "Python, Java, C# <br>"+
-				"HTML5, CSS3, Javascript <br />"+
+				"HTML5, CSS3, Javascript <br>"+
 				"Shell, Bash, PowerShell, Linux, GIT, Docker <br>"
 	},{
 		input: 'ls ./interests',
