@@ -10,7 +10,7 @@ var commands = [
 		input: 'tail -f ./skills.txt',
 		output: "Python, Java, C# <br>"+
 				"HTML5, CSS3, Javascript <br />"+
-				"Linux, GIT, Docker <br>"
+				"Shell, Bash, PowerShell, Linux, GIT, Docker <br>"
 	},{
 		input: 'cat ./interests.txt',
 		output: "Web development, System administration, Software engineering, Teaching<br>"
