@@ -1,11 +1,11 @@
 var commands = [
 	{
-		input: 'tail /etc/info',
+		input: 'tail /etc/motd',
 		output: "Hi. I'm Kaio Oliveira, Computer Science undergraduate student at Federal University of Campina Grande. How can i help you?<br>"
 	},{
-		input: 'tail /etc/location',
+		input: 'tail /etc/info&location',
 		output: "Live in Campina Grande - Paraiba - Brazil <br>" + 
-				"Sports and Handball fan. :D <br>"
+				"Sports and Handball fan :D <br>"
 	},{
 		input: 'cat -b ./experience',
 		output: "1 PET Computação<br>"+
@@ -13,29 +13,29 @@ var commands = [
 	},{
 		input: 'tail -f ./programming_skills',
 		output: 'Scripting and programming language <br><br>'+
-				'           | BEGINNER | FAMILIAR | PROFICIENT | EXPERT | MASTER <br>'+
-				'  Python   |     *    |     *    |      *     |        |        <br>'+
-				'   Java    |     *    |     *    |      *     |    *   |        <br>'+
-				'    C#     |     *    |     *    |            |        |        <br>'+
-				'   Ruby    |     *    |     *    |            |        |        <br>'
+				'&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp| BEGINNER | FAMILIAR | PROFICIENT | EXPERT | MASTER <br>'+
+				'&nbsp Python &nbsp | &nbsp &nbsp * &nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
+				'&nbsp &nbspJava&nbsp &nbsp | &nbsp &nbsp * &nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp * &nbsp | <br>'+
+				' &nbsp &nbsp C# &nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
+				'&nbsp &nbspRuby &nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'
 	},{
 		input: 'tail -f ./web_skills',
 		output: 'Web development <br><br>'+
-				'           | BEGINNER | FAMILIAR | PROFICIENT | EXPERT | MASTER <br>'+
-				'   HTML5   |     *    |     *    |      *     |        |        <br>'+
-				'   CSS3    |     *    |     *    |            |        |        <br>'+
-				'Javascript |     *    |          |            |        |        <br>'+
-				' AngularJS |     *    |          |            |        |        <br>'+
-				'  JQuery   |     *    |          |            |        |        <br>'
+				'&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp| BEGINNER | FAMILIAR | PROFICIENT | EXPERT | MASTER <br>'+
+				'&nbsp &nbspHTML5&nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
+				'&nbsp &nbspCSS3&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
+				'Javascript |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
+				' AngularJS |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
+				'&nbsp JQuery &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'
 	},{
 		input: 'tail -f ./general_skills',
 		output: 'General skills <br><br>'+
-				'           | BEGINNER | FAMILIAR | PROFICIENT | EXPERT | MASTER <br>'+
-				'   Shell   |     *    |     *    |      *     |        |        <br>'+
-				'   Linux   |     *    |     *    |      *     |        |        <br>'+
-				'    GIT    |     *    |     *    |      *     |    *   |        <br>'+
-				'   Docker  |     *    |     *    |            |        |        <br>'+
-				'  Android  |     *    |     *    |            |        |        <br>'
+				'&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp| BEGINNER | FAMILIAR | PROFICIENT | EXPERT | MASTER <br>'+
+				'&nbsp &nbspShell&nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
+				'&nbsp &nbspLinux&nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
+				'&nbsp &nbsp GIT &nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp * &nbsp | <br>'+
+				'&nbsp &nbspDocker&nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
+				'&nbsp Android &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'
 	},{
 		input: 'ls ./interests',
 		output: "Web development, System administration, Software engineering, Teaching <br>"
@@ -49,9 +49,9 @@ var commands = [
 		input: 'service --status-all',
 		output: '',
 		timedOutput: [
-				'[ + ]  studying ',
-				'[ + ]  system-administration ',
-				'[ + ]  research '
+				'[ + ] studying ',
+				'[ + ] system-administration ',
+				'[ + ] research '
 		]
 
 	},{
