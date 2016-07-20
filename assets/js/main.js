@@ -1,16 +1,40 @@
 var commands = [
 	{
 		input: 'tail /etc/info',
-		output: "Olá. Sou Kaio Oliveira, estudante de Ciência da Computação na Universidade Federal de Campina Grande.<br>"
+		output: "Hi. I'm Kaio Oliveira, Computer Science undergraduate student at Federal University of Campina Grande. How can i help you?<br>"
+	},{
+		input: 'tail /etc/location',
+		output: "Live in Campina Grande - Paraiba - Brazil <br>" + 
+				"Sports and Handball fan. :D <br>"
 	},{
 		input: 'cat -b ./experience',
 		output: "1 PET Computação<br>"+
 				"2 Guardians<br>"
 	},{
-		input: 'tail -f ./skills',
-		output: "Python, Java, C# <br>"+
-				"HTML5, CSS3, Javascript <br>"+
-				"Shell, Bash, PowerShell, Linux, GIT, Docker <br>"
+		input: 'tail -f ./programming_skills',
+		output: 'Scripting and programming language <br><br>'+
+				'           | BEGINNER | FAMILIAR | PROFICIENT | EXPERT | MASTER <br>'+
+				'  Python   |     *    |     *    |      *     |        |        <br>'+
+				'   Java    |     *    |     *    |      *     |    *   |        <br>'+
+				'    C#     |     *    |     *    |            |        |        <br>'+
+				'   Ruby    |     *    |     *    |            |        |        <br>'
+	},{
+		input: 'tail -f ./web_skills',
+		output: 'Web development <br><br>'+
+				'           | BEGINNER | FAMILIAR | PROFICIENT | EXPERT | MASTER <br>'+
+				'   HTML5   |     *    |     *    |      *     |        |        <br>'+
+				'   CSS3    |     *    |     *    |            |        |        <br>'+
+				'Javascript |     *    |          |            |        |        <br>'+
+				' AngularJS |     *    |          |            |        |        <br>'+
+				'  JQuery   |     *    |          |            |        |        <br>'
+	},{
+		input: 'tail -f ./general_skills',
+		output: 'General skills <br><br>'+
+				'           | BEGINNER | FAMILIAR | PROFICIENT | EXPERT | MASTER <br>'+
+				'   Shell   |     *    |     *    |      *     |        |        <br>'+
+				'   Linux   |     *    |     *    |      *     |        |        <br>'+
+				'    GIT    |     *    |     *    |      *     |    *   |        <br>'+
+				'   Docker  |     *    |     *    |            |        |        <br>'
 	},{
 		input: 'ls ./interests',
 		output: "Web development, System administration, Software engineering, Teaching <br>"
@@ -32,8 +56,6 @@ var commands = [
 	},{
 		input: 'ls -l ./contact',
 		output: '<a target="_blank" href="mailto:kaio.kassiano.oliveira@ccc.ufcg.edu.br">email</a><br> '
-				
-
 	}
 
 ]
