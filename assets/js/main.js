@@ -1,18 +1,18 @@
 var commands = [
 	{
-		input: 'cat /etc/info.txt',
+		input: 'tail /etc/info',
 		output: "Olá. Sou Kaio Oliveira, estudante de Ciência da Computação na Universidade Federal de Campina Grande.<br>"
 	},{
 		input: 'cat -b ./experience',
 		output: "1 PET Computação<br>"+
 				"2 Guardians<br>"
 	},{
-		input: 'tail -f ./skills.txt',
+		input: 'tail -f ./skills',
 		output: "Python, Java, C# <br>"+
 				"HTML5, CSS3, Javascript <br />"+
 				"Shell, Bash, PowerShell, Linux, GIT, Docker <br>"
 	},{
-		input: 'cat ./interests.txt',
+		input: 'ls ./interests',
 		output: "Web development, System administration, Software engineering, Teaching<br>"
 	},{
 		input: 'ls ./resume',
