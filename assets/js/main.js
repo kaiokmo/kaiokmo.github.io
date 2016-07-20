@@ -13,12 +13,12 @@ var commands = [
 				"Shell, Bash, PowerShell, Linux, GIT, Docker <br>"
 	},{
 		input: 'ls ./interests',
-		output: "Web development, System administration, Software engineering, Teaching<br>"
+		output: "Web development, System administration, Software engineering, Teaching <br>"
 	},{
 		input: 'ls ./resume',
-		output: '<a target="_blank" href="http://github.com/kaiokassiano">github</a><br>'+
-				'<a target="_blank" href="http://lattes.cnpq.br/2823303331057543">lattes</a><br>'+
-				'<a target="_blank" href="http://www.linkedin.com/in/kaiokassiano">linkedin</a><br>'
+		output: '<a target="_blank" href="http://github.com/kaiokassiano">github</a> <br>'+
+				'<a target="_blank" href="http://lattes.cnpq.br/2823303331057543">lattes</a> <br>'+
+				'<a target="_blank" href="http://www.linkedin.com/in/kaiokassiano">linkedin</a> <br>'
 
 	},{
 		input: 'service --status-all',
