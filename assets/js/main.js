@@ -34,7 +34,8 @@ var commands = [
 				'   Shell   |     *    |     *    |      *     |        |        <br>'+
 				'   Linux   |     *    |     *    |      *     |        |        <br>'+
 				'    GIT    |     *    |     *    |      *     |    *   |        <br>'+
-				'   Docker  |     *    |     *    |            |        |        <br>'
+				'   Docker  |     *    |     *    |            |        |        <br>'+
+				'  Android  |     *    |     *    |            |        |        <br>'
 	},{
 		input: 'ls ./interests',
 		output: "Web development, System administration, Software engineering, Teaching <br>"
