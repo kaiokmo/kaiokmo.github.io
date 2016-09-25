@@ -15,9 +15,9 @@ var commands = [
 		output: 'Scripting and programming language <br><br>'+
 				'&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp| BEGINNER | FAMILIAR | PROFICIENT | EXPERT | MASTER <br>'+
 				'&nbsp Python &nbsp | &nbsp &nbsp * &nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
-				'&nbsp &nbspJava&nbsp &nbsp | &nbsp &nbsp * &nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
-				' &nbsp &nbsp C# &nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
-				'&nbsp &nbspRuby &nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'
+				'&nbsp &nbspJava&nbsp &nbsp | &nbsp &nbsp * &nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp * &nbsp | <br>'+
+				' &nbsp &nbsp C# &nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'+
+				'&nbsp &nbspRuby &nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | <br>'
 	},{
 		input: 'tail -f ./web_skills.txt',
 		output: 'Web development <br><br>'+
