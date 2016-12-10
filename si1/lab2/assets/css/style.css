@@ -1,0 +1,15 @@
+.md-display-2 {
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	background: #00695C
+}
+
+.progress-bar {
+	background: #00C343;
+}
+
+.md-card {
+	background: #ECEFF1 !important;
+}
