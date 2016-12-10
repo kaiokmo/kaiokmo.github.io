@@ -1,15 +1,17 @@
 var commands = [
 {
 	input: 'tail /etc/motd',
-	output: "Hi. I'm Kaio Oliveira, Computer Science undergraduate student at Federal University of Campina Grande. How can i help you?<br>"
+	output: "Hi. I'm Kaio Oliveira.<br>Computer Science undergraduate student at Federal University of Campina Grande.<br>"+
+	"Also, Developer at Software Practices Laboratory.<br><br>How can i help you?<br><br>"
 },{
 	input: 'tail /etc/info&location',
 	output: "Live in Campina Grande - Paraiba - Brazil <br>" + 
 	"Sports and Handball fan :D <br>"
 },{
 	input: 'cat /etc/experience',
-	output: "[ + ] PET Computação<br>"+
-	"[ + ] Guardians<br>"
+	output: "[ + ] Software Practices Laboratory (actually)<br>"+
+	"[ + ] Guardians UFCG (actually)<br>"+
+	"[ . ] PET Computação (past)<br>"
 },{
 	input: 'tail -f ./programming_skills.txt',
 	output: 'Scripting and programming language <br><br>'+
