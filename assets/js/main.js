@@ -76,10 +76,6 @@ function terminal(){
 }
 
 function inputCommand(){
-	
-	$(document).ready(function(){
-		$('body,html').animate({scrollTop: 500}, 500); 
-	});
 
 	var cmd = commands[commandIndex]
 	charIndex = 0
