@@ -2,11 +2,11 @@ var commands = [
 {
 	input: 'tail /etc/motd',
 	output: "Hi. I'm Kaio Oliveira.<br>Computer Science undergraduate student at Federal University of Campina Grande.<br>"+
-	"Also, Developer at Software Practices Laboratory.<br><br>How can i help you?<br><br>"
+	"Also, Developer at Software Practices Laboratory.<br><br>pst: keep 'PageDown' pressed :D<br>"
 },{
 	input: 'tail /etc/info&location',
 	output: "Live in Campina Grande - Paraiba - Brazil <br>" + 
-	"Sports and Handball fan :D <br>"
+	"Sports and Handball fan<br>"
 },{
 	input: 'cat /etc/experience',
 	output: "[ + ] Software Practices Laboratory (web development)<br>"+
@@ -20,7 +20,7 @@ var commands = [
 	' &nbsp &nbsp C# &nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp | &nbsp &nbsp &nbsp*&nbsp &nbsp &nbsp| &nbsp &nbsp*&nbsp &nbsp| &nbsp &nbsp &nbsp &nbsp|<br>'+
 	'&nbsp Python &nbsp | &nbsp &nbsp * &nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp|<br>'+
 	'&nbsp &nbspHTML5&nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp|<br>'+
-	'&nbsp &nbspCSS3&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp|<br>'+
+	'&nbsp &nbspCSS3&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp * &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp|<br>'+
 	'JavaScript |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp|<br>'+
 	'&nbsp &nbspRuby &nbsp &nbsp|&nbsp &nbsp &nbsp*&nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |&nbsp &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp|<br>'
 },{
