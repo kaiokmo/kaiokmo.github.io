@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+</head>
+<body>
+<h1>FindBugs Report</h1>
+<p>Produced using <a href="http://findbugs.sourceforge.net">FindBugs</a>3.0.1.</p>
+<p>Project: 
+			GHCli[app]</p>
+<h2>Metrics</h2>
+<p>9990 lines of code analyzed,
+	in 231 classes, 
+	in 26 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right"/>
+<td align="right">NaN</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">9</td>
+<td align="right">0.90</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>9</b>
+</td>
+<td align="right">
+<b>0.90</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Summary</h2>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+</td>
+<td align="right">6</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">2</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>9</b>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h1>Warnings</h1>
+<p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+<h2>
+<a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UR_UNINIT_READ">Uninitialized read of field in constructor</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Uninitialized read of login in new com.github.ghcli.ViewHolder.FollowersViewHolder(View, IGitHubUser, Context)<br/>
+<br/>
+<br/>In file FollowersViewHolder.java,
+					
+						line 43<br/>In class com.github.ghcli.ViewHolder.FollowersViewHolder<br/>In method new com.github.ghcli.ViewHolder.FollowersViewHolder(View, IGitHubUser, Context)<br/>Field com.github.ghcli.ViewHolder.FollowersViewHolder.login<br/>At FollowersViewHolder.java:[line 43]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_PERFORMANCE">Performance Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: com.github.ghcli.ViewHolder.FollowersViewHolder.FOLLOW; should this field be static?<br/>
+<br/>
+<br/>In file FollowersViewHolder.java,
+					
+						line 27<br/>In class com.github.ghcli.ViewHolder.FollowersViewHolder<br/>Field com.github.ghcli.ViewHolder.FollowersViewHolder.FOLLOW<br/>At FollowersViewHolder.java:[line 27]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: com.github.ghcli.ViewHolder.FollowersViewHolder.UNFOLLOW; should this field be static?<br/>
+<br/>
+<br/>In file FollowersViewHolder.java,
+					
+						line 28<br/>In class com.github.ghcli.ViewHolder.FollowersViewHolder<br/>Field com.github.ghcli.ViewHolder.FollowersViewHolder.UNFOLLOW<br/>At FollowersViewHolder.java:[line 28]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#URF_UNREAD_FIELD">Unread field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: com.github.ghcli.activities.FollowersFragment.mParam1<br/>
+<br/>
+<br/>In file FollowersFragment.java,
+					
+						line 105<br/>In class com.github.ghcli.activities.FollowersFragment<br/>Field com.github.ghcli.activities.FollowersFragment.mParam1<br/>At FollowersFragment.java:[line 105]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#URF_UNREAD_FIELD">Unread field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: com.github.ghcli.activities.FollowersFragment.mParam2<br/>
+<br/>
+<br/>In file FollowersFragment.java,
+					
+						line 106<br/>In class com.github.ghcli.activities.FollowersFragment<br/>Field com.github.ghcli.activities.FollowersFragment.mParam2<br/>At FollowersFragment.java:[line 106]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#URF_UNREAD_FIELD">Unread field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: com.github.ghcli.activities.ReposFragment.mParam1<br/>
+<br/>
+<br/>In file ReposFragment.java,
+					
+						line 56<br/>In class com.github.ghcli.activities.ReposFragment<br/>Field com.github.ghcli.activities.ReposFragment.mParam1<br/>At ReposFragment.java:[line 56]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#URF_UNREAD_FIELD">Unread field</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: com.github.ghcli.activities.ReposFragment.mParam2<br/>
+<br/>
+<br/>In file ReposFragment.java,
+					
+						line 57<br/>In class com.github.ghcli.activities.ReposFragment<br/>Field com.github.ghcli.activities.ReposFragment.mParam2<br/>At ReposFragment.java:[line 57]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to toolbar in com.github.ghcli.activities.HomePage.onCreate(Bundle)<br/>
+<br/>
+<br/>In file HomePage.java,
+					
+						line 56<br/>In class com.github.ghcli.activities.HomePage<br/>In method com.github.ghcli.activities.HomePage.onCreate(Bundle)<br/>Local variable named toolbar<br/>At HomePage.java:[line 56]<br/>At HomePage.java:[line 56]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Switch statement found in com.github.ghcli.activities.HomePage.selectFragment(MenuItem) where default case is missing<br/>
+<br/>
+<br/>In file HomePage.java,
+					
+						lines 87
+						    to 95<br/>In class com.github.ghcli.activities.HomePage<br/>In method com.github.ghcli.activities.HomePage.selectFragment(MenuItem)<br/>At HomePage.java:[lines 87-95]<br/>At HomePage.java:[lines 87-95]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h1>
+<a name="Details">Warning Types</a>
+</h1>
+<h2>
+<a name="DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</h2>
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because FindBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SF_SWITCH_NO_DEFAULT">Switch statement found where default case is missing</a>
+</h2>
+
+  <p> This method contains a switch statement where default case is missing.
+  Usually you need to provide a default case.</p>
+  <p>Because the analysis only looks at the generated bytecode, this warning can be incorrect triggered if
+the default case is at the end of the switch statement and the switch statement doesn't contain break statements for other
+cases.
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</h2>
+
+  <p> This class contains an instance final field that
+   is initialized to a compile-time static value.
+   Consider making the field static.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="UR_UNINIT_READ">Uninitialized read of field in constructor</a>
+</h2>
+
+  <p> This constructor reads a field which has not yet been assigned a value.&nbsp;
+  This is often caused when the programmer mistakenly uses the field instead
+  of one of the constructor's parameters.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="URF_UNREAD_FIELD">Unread field</a>
+</h2>
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+</body>
+</html>

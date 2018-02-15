@@ -1,0 +1,3786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FindBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+</head>
+<body>
+<h1>FindBugs Report</h1>
+<p>Produced using <a href="http://findbugs.sourceforge.net">FindBugs</a>3.0.1.</p>
+<p>Project: 
+			fogbow-manager[manager]</p>
+<h2>Metrics</h2>
+<p>18245 lines of code analyzed,
+	in 223 classes, 
+	in 65 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right">64</td>
+<td align="right">3.51</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">147</td>
+<td align="right">8.06</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>211</b>
+</td>
+<td align="right">
+<b>11.56</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Summary</h2>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</td>
+<td align="right">33</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+</td>
+<td align="right">10</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_EXPERIMENTAL">Experimental Warnings</a>
+</td>
+<td align="right">13</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_I18N">Internationalization Warnings</a>
+</td>
+<td align="right">23</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</td>
+<td align="right">11</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+</td>
+<td align="right">84</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<a href="#Warnings_SECURITY">Security Warnings</a>
+</td>
+<td align="right">1</td>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_STYLE">Dodgy code Warnings</a>
+</td>
+<td align="right">35</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>211</b>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h1>Warnings</h1>
+<p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+<h2>
+<a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DE_MIGHT_IGNORE">Method might ignore exception</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.ManagerController.getResourceInfoInUseByUserId(Token, String, boolean) might ignore java.lang.Exception<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 694<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.getResourceInfoInUseByUserId(Token, String, boolean)<br/>Exception class java.lang.Exception<br/>At ManagerController.java:[line 694]<br/>At ManagerController.java:[line 694]<br/>At ManagerController.java:[line 694]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DE_MIGHT_IGNORE">Method might ignore exception</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.order.OrderServerResource.fetch() might ignore java.lang.Exception<br/>
+<br/>
+<br/>In file OrderServerResource.java,
+					
+						line 78<br/>In class org.fogbowcloud.manager.occi.order.OrderServerResource<br/>In method org.fogbowcloud.manager.occi.order.OrderServerResource.fetch()<br/>Exception class java.lang.Exception<br/>At OrderServerResource.java:[line 78]<br/>At OrderServerResource.java:[line 78]<br/>At OrderServerResource.java:[line 78]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.model.FederationMember defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file FederationMember.java,
+					
+						lines 61
+						    to 65<br/>In class org.fogbowcloud.manager.core.model.FederationMember<br/>In method org.fogbowcloud.manager.core.model.FederationMember.equals(Object)<br/>At FederationMember.java:[lines 61-65]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.model.Flavor defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file Flavor.java,
+					
+						lines 104
+						    to 108<br/>In class org.fogbowcloud.manager.core.model.Flavor<br/>In method org.fogbowcloud.manager.core.model.Flavor.equals(Object)<br/>At Flavor.java:[lines 104-108]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.accounting.AccountingInfo defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file AccountingInfo.java,
+					
+						lines 43
+						    to 50<br/>In class org.fogbowcloud.manager.core.plugins.accounting.AccountingInfo<br/>In method org.fogbowcloud.manager.core.plugins.accounting.AccountingInfo.equals(Object)<br/>At AccountingInfo.java:[lines 43-50]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.accounting.ResourceUsage defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file ResourceUsage.java,
+					
+						lines 45
+						    to 50<br/>In class org.fogbowcloud.manager.core.plugins.accounting.ResourceUsage<br/>In method org.fogbowcloud.manager.core.plugins.accounting.ResourceUsage.equals(Object)<br/>At ResourceUsage.java:[lines 45-50]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.util.Credential defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file Credential.java,
+					
+						lines 29
+						    to 37<br/>In class org.fogbowcloud.manager.core.plugins.util.Credential<br/>In method org.fogbowcloud.manager.core.plugins.util.Credential.equals(Object)<br/>At Credential.java:[lines 29-37]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.instance.FedInstanceState defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file FedInstanceState.java,
+					
+						lines 77
+						    to 114<br/>In class org.fogbowcloud.manager.occi.instance.FedInstanceState<br/>In method org.fogbowcloud.manager.occi.instance.FedInstanceState.equals(Object)<br/>At FedInstanceState.java:[lines 77-114]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.instance.Instance defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file Instance.java,
+					
+						lines 174
+						    to 178<br/>In class org.fogbowcloud.manager.occi.instance.Instance<br/>In method org.fogbowcloud.manager.occi.instance.Instance.equals(Object)<br/>At Instance.java:[lines 174-178]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.model.Category defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file Category.java,
+					
+						lines 96
+						    to 105<br/>In class org.fogbowcloud.manager.occi.model.Category<br/>In method org.fogbowcloud.manager.occi.model.Category.equals(Object)<br/>At Category.java:[lines 96-105]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.model.Resource defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file Resource.java,
+					
+						lines 190
+						    to 194<br/>In class org.fogbowcloud.manager.occi.model.Resource<br/>In method org.fogbowcloud.manager.occi.model.Resource.equals(Object)<br/>At Resource.java:[lines 190-194]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.model.Token defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file Token.java,
+					
+						lines 99
+						    to 126<br/>In class org.fogbowcloud.manager.occi.model.Token<br/>In method org.fogbowcloud.manager.occi.model.Token.equals(Object)<br/>At Token.java:[lines 99-126]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.model.Token$User defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file Token.java,
+					
+						lines 168
+						    to 179<br/>In class org.fogbowcloud.manager.occi.model.Token$User<br/>In method org.fogbowcloud.manager.occi.model.Token$User.equals(Object)<br/>At Token.java:[lines 168-179]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.order.Order defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file Order.java,
+					
+						lines 235
+						    to 283<br/>In class org.fogbowcloud.manager.occi.order.Order<br/>In method org.fogbowcloud.manager.occi.order.Order.equals(Object)<br/>At Order.java:[lines 235-283]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.storage.StorageLinkRepository$StorageLink defines equals and uses Object.hashCode()<br/>
+<br/>
+<br/>In file StorageLinkRepository.java,
+					
+						lines 245
+						    to 284<br/>In class org.fogbowcloud.manager.occi.storage.StorageLinkRepository$StorageLink<br/>In method org.fogbowcloud.manager.occi.storage.StorageLinkRepository$StorageLink.equals(Object)<br/>At StorageLinkRepository.java:[lines 245-284]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DE_MIGHT_IGNORE">Method might ignore exception</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.getImageId(Token, String) might ignore java.io.IOException<br/>
+<br/>
+<br/>In file AzureComputePlugin.java,
+					
+						line 544<br/>In class org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.getImageId(Token, String)<br/>Exception class java.io.IOException<br/>At AzureComputePlugin.java:[line 544]<br/>At AzureComputePlugin.java:[line 544]<br/>At AzureComputePlugin.java:[line 544]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DE_MIGHT_IGNORE">Method might ignore exception</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.getInstance(Token, String) might ignore java.io.IOException<br/>
+<br/>
+<br/>In file AzureComputePlugin.java,
+					
+						line 367<br/>In class org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.getInstance(Token, String)<br/>Exception class java.io.IOException<br/>At AzureComputePlugin.java:[line 367]<br/>At AzureComputePlugin.java:[line 367]<br/>At AzureComputePlugin.java:[line 367]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DE_MIGHT_IGNORE">Method might ignore exception</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.getInstances(Token) might ignore java.io.IOException<br/>
+<br/>
+<br/>In file AzureComputePlugin.java,
+					
+						line 270<br/>In class org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.getInstances(Token)<br/>Exception class java.io.IOException<br/>At AzureComputePlugin.java:[line 270]<br/>At AzureComputePlugin.java:[line 270]<br/>At AzureComputePlugin.java:[line 270]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DE_MIGHT_IGNORE">Method might ignore exception</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.getResourcesInfo(Token) might ignore java.io.IOException<br/>
+<br/>
+<br/>In file AzureComputePlugin.java,
+					
+						line 450<br/>In class org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.getResourcesInfo(Token)<br/>Exception class java.io.IOException<br/>At AzureComputePlugin.java:[line 450]<br/>At AzureComputePlugin.java:[line 450]<br/>At AzureComputePlugin.java:[line 450]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DE_MIGHT_IGNORE">Method might ignore exception</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.requestInstance(Token, List, Map, String) might ignore java.io.IOException<br/>
+<br/>
+<br/>In file AzureComputePlugin.java,
+					
+						line 179<br/>In class org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.requestInstance(Token, List, Map, String)<br/>Exception class java.io.IOException<br/>At AzureComputePlugin.java:[line 179]<br/>At AzureComputePlugin.java:[line 179]<br/>At AzureComputePlugin.java:[line 179]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#ODR_OPEN_DATABASE_RESOURCE">Method may fail to close database resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.getAccountingInfo() may fail to close Statement<br/>
+<br/>
+<br/>In file AccountingDataStore.java,
+					
+						line 213<br/>In class org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore<br/>In method org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.getAccountingInfo()<br/>Need to close java.sql.Statement <br/>At AccountingDataStore.java:[line 213]<br/>At AccountingDataStore.java:[line 213]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ODR_OPEN_DATABASE_RESOURCE">Method may fail to close database resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.getEntryKeys() may fail to close Statement<br/>
+<br/>
+<br/>In file AccountingDataStore.java,
+					
+						line 190<br/>In class org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore<br/>In method org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.getEntryKeys()<br/>Need to close java.sql.Statement <br/>At AccountingDataStore.java:[line 190]<br/>At AccountingDataStore.java:[line 190]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.mkdirs() ignored in org.fogbowcloud.manager.core.plugins.imagestorage.http.HTTPDownloadImageStoragePlugin.doDownloadImage(Token, String)<br/>
+<br/>
+<br/>In file HTTPDownloadImageStoragePlugin.java,
+					
+						line 178<br/>In class org.fogbowcloud.manager.core.plugins.imagestorage.http.HTTPDownloadImageStoragePlugin<br/>In method org.fogbowcloud.manager.core.plugins.imagestorage.http.HTTPDownloadImageStoragePlugin.doDownloadImage(Token, String)<br/>Called method java.io.File.mkdirs()<br/>At HTTPDownloadImageStoragePlugin.java:[line 178]<br/>At HTTPDownloadImageStoragePlugin.java:[line 178]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.delete() ignored in org.fogbowcloud.manager.core.plugins.imagestorage.http.HTTPDownloadImageStoragePlugin.downloadTempFile(String)<br/>
+<br/>
+<br/>In file HTTPDownloadImageStoragePlugin.java,
+					
+						line 354<br/>In class org.fogbowcloud.manager.core.plugins.imagestorage.http.HTTPDownloadImageStoragePlugin<br/>In method org.fogbowcloud.manager.core.plugins.imagestorage.http.HTTPDownloadImageStoragePlugin.downloadTempFile(String)<br/>Called method java.io.File.delete()<br/>At HTTPDownloadImageStoragePlugin.java:[line 354]<br/>At HTTPDownloadImageStoragePlugin.java:[line 354]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.delete() ignored in org.fogbowcloud.manager.core.plugins.imagestorage.http.HTTPDownloadImageStoragePlugin.removeImageFiles(List, File)<br/>
+<br/>
+<br/>In file HTTPDownloadImageStoragePlugin.java,
+					
+						line 239<br/>In class org.fogbowcloud.manager.core.plugins.imagestorage.http.HTTPDownloadImageStoragePlugin<br/>In method org.fogbowcloud.manager.core.plugins.imagestorage.http.HTTPDownloadImageStoragePlugin.removeImageFiles(List, File)<br/>Called method java.io.File.delete()<br/>At HTTPDownloadImageStoragePlugin.java:[line 239]<br/>At HTTPDownloadImageStoragePlugin.java:[line 239]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.renameTo(File) ignored in org.fogbowcloud.manager.core.plugins.util.VhdUtils.convertRawToVhd(String, String)<br/>
+<br/>
+<br/>In file VhdUtils.java,
+					
+						line 146<br/>In class org.fogbowcloud.manager.core.plugins.util.VhdUtils<br/>In method org.fogbowcloud.manager.core.plugins.util.VhdUtils.convertRawToVhd(String, String)<br/>Called method java.io.File.renameTo(File)<br/>At VhdUtils.java:[line 146]<br/>At VhdUtils.java:[line 146]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.renameTo(File) ignored in org.fogbowcloud.manager.core.plugins.util.VhdUtils.convertVhdToRaw(String, String)<br/>
+<br/>
+<br/>In file VhdUtils.java,
+					
+						line 116<br/>In class org.fogbowcloud.manager.core.plugins.util.VhdUtils<br/>In method org.fogbowcloud.manager.core.plugins.util.VhdUtils.convertVhdToRaw(String, String)<br/>Called method java.io.File.renameTo(File)<br/>At VhdUtils.java:[line 116]<br/>At VhdUtils.java:[line 116]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.createNewFile() ignored in org.fogbowcloud.manager.core.plugins.util.VhdUtils.openImage(String, boolean)<br/>
+<br/>
+<br/>In file VhdUtils.java,
+					
+						line 52<br/>In class org.fogbowcloud.manager.core.plugins.util.VhdUtils<br/>In method org.fogbowcloud.manager.core.plugins.util.VhdUtils.openImage(String, boolean)<br/>Called method java.io.File.createNewFile()<br/>At VhdUtils.java:[line 52]<br/>At VhdUtils.java:[line 52]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.mkdirs() ignored in org.fogbowcloud.manager.core.plugins.util.VhdUtils.openImage(String, boolean)<br/>
+<br/>
+<br/>In file VhdUtils.java,
+					
+						line 51<br/>In class org.fogbowcloud.manager.core.plugins.util.VhdUtils<br/>In method org.fogbowcloud.manager.core.plugins.util.VhdUtils.openImage(String, boolean)<br/>Called method java.io.File.mkdirs()<br/>At VhdUtils.java:[line 51]<br/>At VhdUtils.java:[line 51]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exceptional return value of java.io.File.mkdir() ignored in org.fogbowcloud.manager.occi.DataStoreHelper.getDataStoreUrl(String, String)<br/>
+<br/>
+<br/>In file DataStoreHelper.java,
+					
+						line 22<br/>In class org.fogbowcloud.manager.occi.DataStoreHelper<br/>In method org.fogbowcloud.manager.occi.DataStoreHelper.getDataStoreUrl(String, String)<br/>Called method java.io.File.mkdir()<br/>At DataStoreHelper.java:[line 22]<br/>At DataStoreHelper.java:[line 22]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SE_COMPARATOR_SHOULD_BE_SERIALIZABLE">Comparator doesn't implement Serializable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.memberpicker.RoundRobinMemberPickerPlugin$FederationMemberComparator implements Comparator but not Serializable<br/>
+<br/>
+<br/>In file RoundRobinMemberPickerPlugin.java,
+					
+						lines 62
+						    to 68<br/>In class org.fogbowcloud.manager.core.plugins.memberpicker.RoundRobinMemberPickerPlugin$FederationMemberComparator<br/>At RoundRobinMemberPickerPlugin.java:[lines 62-68]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SE_COMPARATOR_SHOULD_BE_SERIALIZABLE">Comparator doesn't implement Serializable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.prioritization.nof.FederationMemberDebtComparator implements Comparator but not Serializable<br/>
+<br/>
+<br/>In file FederationMemberDebtComparator.java,
+					
+						lines 5
+						    to 11<br/>In class org.fogbowcloud.manager.core.plugins.prioritization.nof.FederationMemberDebtComparator<br/>At FederationMemberDebtComparator.java:[lines 5-11]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SE_COMPARATOR_SHOULD_BE_SERIALIZABLE">Comparator doesn't implement Serializable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.RequirementsHelper$FlavorComparator implements Comparator but not Serializable<br/>
+<br/>
+<br/>In file RequirementsHelper.java,
+					
+						lines 325
+						    to 351<br/>In class org.fogbowcloud.manager.core.RequirementsHelper$FlavorComparator<br/>At RequirementsHelper.java:[lines 325-351]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#NP_NULL_ON_SOME_PATH">Possible null pointer dereference</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Possible null pointer dereference of diskOffering in org.fogbowcloud.manager.core.plugins.compute.cloudstack.CloudStackComputePlugin.requestInstance(Token, List, Map, String)<br/>
+<br/>
+<br/>In file CloudStackComputePlugin.java,
+					
+						line 169<br/>In class org.fogbowcloud.manager.core.plugins.compute.cloudstack.CloudStackComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.cloudstack.CloudStackComputePlugin.requestInstance(Token, List, Map, String)<br/>Value loaded from diskOffering<br/>Dereferenced at CloudStackComputePlugin.java:[line 169]<br/>Known null at CloudStackComputePlugin.java:[line 168]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#HE_USE_OF_UNHASHABLE_CLASS">Use of class without a hashCode() method in a hashed data structure</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.model.FederationMember doesn't define a hashCode() method but is used in a hashed data structure in org.fogbowcloud.manager.core.plugins.capacitycontroller.fairnessdriven.PairwiseFairnessDrivenController.getLastFairness(FederationMember)<br/>
+<br/>
+<br/>In file PairwiseFairnessDrivenController.java,
+					
+						line 96<br/>In class org.fogbowcloud.manager.core.plugins.capacitycontroller.fairnessdriven.PairwiseFairnessDrivenController<br/>In method org.fogbowcloud.manager.core.plugins.capacitycontroller.fairnessdriven.PairwiseFairnessDrivenController.getLastFairness(FederationMember)<br/>Unhashable class org.fogbowcloud.manager.core.model.FederationMember <br/>Called method java.util.Map.get(Object)<br/>At PairwiseFairnessDrivenController.java:[line 96]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#NP_NULL_ON_SOME_PATH">Possible null pointer dereference</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Possible null pointer dereference of osCategory in org.fogbowcloud.manager.core.ManagerController.getLocalImageId(List, Token)<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 1280<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.getLocalImageId(List, Token)<br/>Value loaded from osCategory<br/>Dereferenced at ManagerController.java:[line 1280]<br/>Known null at ManagerController.java:[line 1276]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#NP_NULL_ON_SOME_PATH">Possible null pointer dereference</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Possible null pointer dereference of order in org.fogbowcloud.manager.core.ManagerController.removeOrderForRemoteMember(String, String)<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 766<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.removeOrderForRemoteMember(String, String)<br/>Value loaded from order<br/>Dereferenced at ManagerController.java:[line 766]<br/>Known null at ManagerController.java:[line 752]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#NP_NULL_ON_SOME_PATH">Possible null pointer dereference</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Possible null pointer dereference of regionJson in org.fogbowcloud.manager.core.plugins.compute.ec2.EC2ComputePlugin.getFlavors()<br/>
+<br/>
+<br/>In file EC2ComputePlugin.java,
+					
+						line 535<br/>In class org.fogbowcloud.manager.core.plugins.compute.ec2.EC2ComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.ec2.EC2ComputePlugin.getFlavors()<br/>Value loaded from regionJson<br/>Dereferenced at EC2ComputePlugin.java:[line 535]<br/>Null value at EC2ComputePlugin.java:[line 525]<br/>Known null at EC2ComputePlugin.java:[line 526]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#NP_NULL_ON_SOME_PATH_EXCEPTION">Possible null pointer dereference in method on exception path</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Possible null pointer dereference of ctx in org.fogbowcloud.manager.core.plugins.identity.ldap.LdapIdentityPlugin.ldapAuthenticate(String, String) on exception path<br/>
+<br/>
+<br/>In file LdapIdentityPlugin.java,
+					
+						line 237<br/>In class org.fogbowcloud.manager.core.plugins.identity.ldap.LdapIdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.ldap.LdapIdentityPlugin.ldapAuthenticate(String, String)<br/>Value loaded from ctx<br/>Dereferenced at LdapIdentityPlugin.java:[line 237]<br/>Null value at LdapIdentityPlugin.java:[line 194]<br/>Known null at LdapIdentityPlugin.java:[line 198]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#NP_NULL_ON_SOME_PATH">Possible null pointer dereference</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Possible null pointer dereference of instance in org.fogbowcloud.manager.occi.storage.StorageServerResource.fetchWithStorageId(OCCIApplication, String, String, List, String)<br/>
+<br/>
+<br/>In file StorageServerResource.java,
+					
+						line 122<br/>In class org.fogbowcloud.manager.occi.storage.StorageServerResource<br/>In method org.fogbowcloud.manager.occi.storage.StorageServerResource.fetchWithStorageId(OCCIApplication, String, String, List, String)<br/>Value loaded from instance<br/>Dereferenced at StorageServerResource.java:[line 122]<br/>Null value at StorageServerResource.java:[line 83]<br/>Known null at StorageServerResource.java:[line 96]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE">Nullcheck of value previously dereferenced</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Nullcheck of tokenEl at line 32 of value previously dereferenced in org.fogbowcloud.manager.xmpp.RemoveStorageLinkHandler.handle(IQ)<br/>
+<br/>
+<br/>In file RemoveStorageLinkHandler.java,
+					
+						line 32<br/>In class org.fogbowcloud.manager.xmpp.RemoveStorageLinkHandler<br/>In method org.fogbowcloud.manager.xmpp.RemoveStorageLinkHandler.handle(IQ)<br/>Value loaded from tokenEl<br/>Return value of org.dom4j.Element.element(String) of type org.dom4j.Element<br/>At RemoveStorageLinkHandler.java:[line 32]<br/>Redundant null check at RemoveStorageLinkHandler.java:[line 34]<br/>Redundant null check at RemoveStorageLinkHandler.java:[line 34]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE">Nullcheck of value previously dereferenced</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Nullcheck of tokenEl at line 35 of value previously dereferenced in org.fogbowcloud.manager.xmpp.StorageLinkHandler.handle(IQ)<br/>
+<br/>
+<br/>In file StorageLinkHandler.java,
+					
+						line 35<br/>In class org.fogbowcloud.manager.xmpp.StorageLinkHandler<br/>In method org.fogbowcloud.manager.xmpp.StorageLinkHandler.handle(IQ)<br/>Value loaded from tokenEl<br/>Return value of org.dom4j.Element.element(String) of type org.dom4j.Element<br/>At StorageLinkHandler.java:[line 35]<br/>Redundant null check at StorageLinkHandler.java:[line 37]<br/>Redundant null check at StorageLinkHandler.java:[line 37]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#UWF_NULL_FIELD">Field only ever set to null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Field only ever set to null: org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaSshClientWrapper.session<br/>
+<br/>
+<br/>In file OpenNebulaSshClientWrapper.java,
+					
+						line 48<br/>In class org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaSshClientWrapper<br/>Field org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaSshClientWrapper.session<br/>At OpenNebulaSshClientWrapper.java:[line 48]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_EXPERIMENTAL">Experimental Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.getAccountingInfo() may fail to clean up java.sql.Statement<br/>
+<br/>
+<br/>In file AccountingDataStore.java,
+					
+						line 213<br/>In class org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore<br/>In method org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.getAccountingInfo()<br/>Reference type java.sql.Statement<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at AccountingDataStore.java:[line 213] is not discharged<br/>Path continues at AccountingDataStore.java:[line 215]<br/>Path continues at AccountingDataStore.java:[line 216]<br/>Remaining obligations: {Statement x 1}</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.getEntryKeys() may fail to clean up java.sql.Statement<br/>
+<br/>
+<br/>In file AccountingDataStore.java,
+					
+						line 190<br/>In class org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore<br/>In method org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.getEntryKeys()<br/>Reference type java.sql.Statement<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at AccountingDataStore.java:[line 190] is not discharged<br/>Path continues at AccountingDataStore.java:[line 192]<br/>Path continues at AccountingDataStore.java:[line 193]<br/>Path continues at AccountingDataStore.java:[line 195]<br/>Path continues at AccountingDataStore.java:[line 196]<br/>Path continues at AccountingDataStore.java:[line 200]<br/>Remaining obligations: {Statement x 1}</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.benchmarking.ssh.SHHBenchmarkingDataStore.getPower(String) may fail to clean up java.sql.ResultSet<br/>
+<br/>
+<br/>In file SHHBenchmarkingDataStore.java,
+					
+						line 104<br/>In class org.fogbowcloud.manager.core.plugins.benchmarking.ssh.SHHBenchmarkingDataStore<br/>In method org.fogbowcloud.manager.core.plugins.benchmarking.ssh.SHHBenchmarkingDataStore.getPower(String)<br/>Reference type java.sql.ResultSet<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at SHHBenchmarkingDataStore.java:[line 104] is not discharged<br/>Path continues at SHHBenchmarkingDataStore.java:[line 106]<br/>Path continues at SHHBenchmarkingDataStore.java:[line 117]<br/>Path continues at SHHBenchmarkingDataStore.java:[line 106]<br/>Remaining obligations: {ResultSet x 1}</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">Method may fail to clean up stream or resource on checked exception</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.CertificateUtils.getCertificateChainFromFile(String) may fail to clean up java.io.InputStream on checked exception<br/>
+<br/>
+<br/>In file CertificateUtils.java,
+					
+						line 66<br/>In class org.fogbowcloud.manager.core.plugins.CertificateUtils<br/>In method org.fogbowcloud.manager.core.plugins.CertificateUtils.getCertificateChainFromFile(String)<br/>Reference type java.io.InputStream<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at CertificateUtils.java:[line 66] is not discharged<br/>Path continues at CertificateUtils.java:[line 67]<br/>Remaining obligations: {InputStream x 1}</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.upload(String, String) may fail to clean up java.io.InputStream<br/>
+<br/>
+<br/>In file AzureComputePlugin.java,
+					
+						line 531<br/>In class org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.upload(String, String)<br/>Reference type java.io.InputStream<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at AzureComputePlugin.java:[line 531] is not discharged<br/>Path continues at AzureComputePlugin.java:[line 532]<br/>Path continues at AzureComputePlugin.java:[line 533]<br/>Remaining obligations: {InputStream x 1}</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">Method may fail to clean up stream or resource on checked exception</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.identity.voms.VomsIdentityPlugin$ProxyCertificateGenerator.generate(Map) may fail to clean up java.io.InputStream on checked exception<br/>
+<br/>
+<br/>In file VomsIdentityPlugin.java,
+					
+						line 282<br/>In class org.fogbowcloud.manager.core.plugins.identity.voms.VomsIdentityPlugin$ProxyCertificateGenerator<br/>In method org.fogbowcloud.manager.core.plugins.identity.voms.VomsIdentityPlugin$ProxyCertificateGenerator.generate(Map)<br/>Reference type java.io.InputStream<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at VomsIdentityPlugin.java:[line 282] is not discharged<br/>Remaining obligations: {InputStream x 1}</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.UserdataUtils.createBase64Command(Order, Properties) may fail to clean up java.io.Reader<br/>
+<br/>
+<br/>In file UserdataUtils.java,
+					
+						line 72<br/>In class org.fogbowcloud.manager.core.UserdataUtils<br/>In method org.fogbowcloud.manager.core.UserdataUtils.createBase64Command(Order, Properties)<br/>Reference type java.io.Reader<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at UserdataUtils.java:[line 72] is not discharged<br/>Path continues at UserdataUtils.java:[line 75]<br/>Path continues at UserdataUtils.java:[line 79]<br/>Path continues at UserdataUtils.java:[line 80]<br/>Path continues at UserdataUtils.java:[line 81]<br/>Path continues at UserdataUtils.java:[line 84]<br/>Path continues at UserdataUtils.java:[line 85]<br/>Path continues at UserdataUtils.java:[line 84]<br/>Path continues at UserdataUtils.java:[line 87]<br/>Path continues at UserdataUtils.java:[line 89]<br/>Path continues at UserdataUtils.java:[line 91]<br/>Path continues at UserdataUtils.java:[line 92]<br/>Path continues at UserdataUtils.java:[line 93]<br/>Path continues at UserdataUtils.java:[line 99]<br/>Path continues at UserdataUtils.java:[line 100]<br/>Path continues at UserdataUtils.java:[line 103]<br/>Path continues at UserdataUtils.java:[line 106]<br/>Path continues at UserdataUtils.java:[line 111]<br/>Path continues at UserdataUtils.java:[line 115]<br/>Path continues at UserdataUtils.java:[line 116]<br/>Remaining obligations: {Reader x 1}</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.instance.InstanceDataStore.executeQueryStatement(String, String[]) may fail to clean up java.sql.ResultSet<br/>
+<br/>
+<br/>In file InstanceDataStore.java,
+					
+						line 397<br/>In class org.fogbowcloud.manager.occi.instance.InstanceDataStore<br/>In method org.fogbowcloud.manager.occi.instance.InstanceDataStore.executeQueryStatement(String, String[])<br/>Reference type java.sql.ResultSet<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at InstanceDataStore.java:[line 397] is not discharged<br/>Path continues at InstanceDataStore.java:[line 399]<br/>Path continues at InstanceDataStore.java:[line 401]<br/>Path continues at InstanceDataStore.java:[line 413]<br/>Path continues at InstanceDataStore.java:[line 420]<br/>Path continues at InstanceDataStore.java:[line 421]<br/>Path continues at InstanceDataStore.java:[line 422]<br/>Path continues at InstanceDataStore.java:[line 423]<br/>Remaining obligations: {ResultSet x 1}</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.ManagerDataStore.countOrder(List) may fail to clean up java.sql.ResultSet<br/>
+<br/>
+<br/>In file ManagerDataStore.java,
+					
+						line 312<br/>In class org.fogbowcloud.manager.occi.ManagerDataStore<br/>In method org.fogbowcloud.manager.occi.ManagerDataStore.countOrder(List)<br/>Reference type java.sql.ResultSet<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at ManagerDataStore.java:[line 312] is not discharged<br/>Path continues at ManagerDataStore.java:[line 313]<br/>Path continues at ManagerDataStore.java:[line 314]<br/>Path continues at ManagerDataStore.java:[line 328]<br/>Path continues at ManagerDataStore.java:[line 314]<br/>Remaining obligations: {ResultSet x 1}</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.ManagerDataStore.getOrders() may fail to clean up java.sql.ResultSet<br/>
+<br/>
+<br/>In file ManagerDataStore.java,
+					
+						line 155<br/>In class org.fogbowcloud.manager.occi.ManagerDataStore<br/>In method org.fogbowcloud.manager.occi.ManagerDataStore.getOrders()<br/>Reference type java.sql.ResultSet<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at ManagerDataStore.java:[line 155] is not discharged<br/>Path continues at ManagerDataStore.java:[line 156]<br/>Path continues at ManagerDataStore.java:[line 166]<br/>Path continues at ManagerDataStore.java:[line 168]<br/>Path continues at ManagerDataStore.java:[line 179]<br/>Path continues at ManagerDataStore.java:[line 168]<br/>Remaining obligations: {ResultSet x 1}</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.ManagerDataStore.getStorageLinks() may fail to clean up java.sql.ResultSet<br/>
+<br/>
+<br/>In file ManagerDataStore.java,
+					
+						line 395<br/>In class org.fogbowcloud.manager.occi.ManagerDataStore<br/>In method org.fogbowcloud.manager.occi.ManagerDataStore.getStorageLinks()<br/>Reference type java.sql.ResultSet<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at ManagerDataStore.java:[line 395] is not discharged<br/>Path continues at ManagerDataStore.java:[line 396]<br/>Path continues at ManagerDataStore.java:[line 404]<br/>Path continues at ManagerDataStore.java:[line 406]<br/>Path continues at ManagerDataStore.java:[line 417]<br/>Path continues at ManagerDataStore.java:[line 406]<br/>Remaining obligations: {ResultSet x 1}</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.network.NetworkDataStore.executeQueryStatement(String, String[]) may fail to clean up java.sql.ResultSet<br/>
+<br/>
+<br/>In file NetworkDataStore.java,
+					
+						line 365<br/>In class org.fogbowcloud.manager.occi.network.NetworkDataStore<br/>In method org.fogbowcloud.manager.occi.network.NetworkDataStore.executeQueryStatement(String, String[])<br/>Reference type java.sql.ResultSet<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at NetworkDataStore.java:[line 365] is not discharged<br/>Path continues at NetworkDataStore.java:[line 367]<br/>Path continues at NetworkDataStore.java:[line 369]<br/>Path continues at NetworkDataStore.java:[line 382]<br/>Path continues at NetworkDataStore.java:[line 389]<br/>Path continues at NetworkDataStore.java:[line 390]<br/>Path continues at NetworkDataStore.java:[line 391]<br/>Path continues at NetworkDataStore.java:[line 392]<br/>Remaining obligations: {ResultSet x 1}</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.storage.StorageDataStore.executeQueryStatement(String, String[]) may fail to clean up java.sql.ResultSet<br/>
+<br/>
+<br/>In file StorageDataStore.java,
+					
+						line 355<br/>In class org.fogbowcloud.manager.occi.storage.StorageDataStore<br/>In method org.fogbowcloud.manager.occi.storage.StorageDataStore.executeQueryStatement(String, String[])<br/>Reference type java.sql.ResultSet<br/>1 instances of obligation remaining<br/>Obligation to clean up resource created at StorageDataStore.java:[line 355] is not discharged<br/>Path continues at StorageDataStore.java:[line 357]<br/>Path continues at StorageDataStore.java:[line 359]<br/>Path continues at StorageDataStore.java:[line 369]<br/>Path continues at StorageDataStore.java:[line 376]<br/>Path continues at StorageDataStore.java:[line 377]<br/>Path continues at StorageDataStore.java:[line 378]<br/>Path continues at StorageDataStore.java:[line 379]<br/>Remaining obligations: {ResultSet x 1}</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_I18N">Internationalization Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin.getAuthorization(String): new String(byte[])<br/>
+<br/>
+<br/>In file OpenNebulaOCCIComputePlugin.java,
+					
+						line 157<br/>In class org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin.getAuthorization(String)<br/>Called method new String(byte[])<br/>At OpenNebulaOCCIComputePlugin.java:[line 157]<br/>At OpenNebulaOCCIComputePlugin.java:[line 157]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin.getAuthorization(String): String.getBytes()<br/>
+<br/>
+<br/>In file OpenNebulaOCCIComputePlugin.java,
+					
+						line 157<br/>In class org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin.getAuthorization(String)<br/>Called method String.getBytes()<br/>At OpenNebulaOCCIComputePlugin.java:[line 157]<br/>At OpenNebulaOCCIComputePlugin.java:[line 157]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.identity.naf.NAFIdentityPlugin.getToken(String): String.getBytes()<br/>
+<br/>
+<br/>In file NAFIdentityPlugin.java,
+					
+						line 94<br/>In class org.fogbowcloud.manager.core.plugins.identity.naf.NAFIdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.naf.NAFIdentityPlugin.getToken(String)<br/>Called method String.getBytes()<br/>At NAFIdentityPlugin.java:[line 94]<br/>At NAFIdentityPlugin.java:[line 94]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.identity.naf.NAFIdentityPlugin.isValid(String): String.getBytes()<br/>
+<br/>
+<br/>In file NAFIdentityPlugin.java,
+					
+						line 115<br/>In class org.fogbowcloud.manager.core.plugins.identity.naf.NAFIdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.naf.NAFIdentityPlugin.isValid(String)<br/>Called method String.getBytes()<br/>At NAFIdentityPlugin.java:[line 115]<br/>At NAFIdentityPlugin.java:[line 115]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.identity.naf.RSAUtils.getKey(String): new java.io.FileReader(String)<br/>
+<br/>
+<br/>In file RSAUtils.java,
+					
+						line 27<br/>In class org.fogbowcloud.manager.core.plugins.identity.naf.RSAUtils<br/>In method org.fogbowcloud.manager.core.plugins.identity.naf.RSAUtils.getKey(String)<br/>Called method new java.io.FileReader(String)<br/>At RSAUtils.java:[line 27]<br/>At RSAUtils.java:[line 27]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.identity.naf.RSAUtils.savePublicKey(PublicKey): new String(byte[])<br/>
+<br/>
+<br/>In file RSAUtils.java,
+					
+						line 128<br/>In class org.fogbowcloud.manager.core.plugins.identity.naf.RSAUtils<br/>In method org.fogbowcloud.manager.core.plugins.identity.naf.RSAUtils.savePublicKey(PublicKey)<br/>Called method new String(byte[])<br/>At RSAUtils.java:[line 128]<br/>At RSAUtils.java:[line 128]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.identity.opennebula.OpenNebulaIdentityPlugin.getToken(String, String): new String(byte[])<br/>
+<br/>
+<br/>In file OpenNebulaIdentityPlugin.java,
+					
+						line 76<br/>In class org.fogbowcloud.manager.core.plugins.identity.opennebula.OpenNebulaIdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.opennebula.OpenNebulaIdentityPlugin.getToken(String, String)<br/>Called method new String(byte[])<br/>At OpenNebulaIdentityPlugin.java:[line 76]<br/>At OpenNebulaIdentityPlugin.java:[line 76]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.util.CloudInitUserDataBuilder.buildBase64UserData(): String.getBytes()<br/>
+<br/>
+<br/>In file CloudInitUserDataBuilder.java,
+					
+						line 482<br/>In class org.fogbowcloud.manager.core.plugins.util.CloudInitUserDataBuilder<br/>In method org.fogbowcloud.manager.core.plugins.util.CloudInitUserDataBuilder.buildBase64UserData()<br/>Called method String.getBytes()<br/>At CloudInitUserDataBuilder.java:[line 482]<br/>At CloudInitUserDataBuilder.java:[line 482]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.util.RSAUtils.encrypt(String, PublicKey): new String(byte[])<br/>
+<br/>
+<br/>In file RSAUtils.java,
+					
+						line 106<br/>In class org.fogbowcloud.manager.core.plugins.util.RSAUtils<br/>In method org.fogbowcloud.manager.core.plugins.util.RSAUtils.encrypt(String, PublicKey)<br/>Called method new String(byte[])<br/>At RSAUtils.java:[line 106]<br/>At RSAUtils.java:[line 106]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.util.RSAUtils.encryptAES(byte[], String): new String(byte[])<br/>
+<br/>
+<br/>In file RSAUtils.java,
+					
+						line 117<br/>In class org.fogbowcloud.manager.core.plugins.util.RSAUtils<br/>In method org.fogbowcloud.manager.core.plugins.util.RSAUtils.encryptAES(byte[], String)<br/>Called method new String(byte[])<br/>At RSAUtils.java:[line 117]<br/>At RSAUtils.java:[line 117]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.util.RSAUtils.getKey(String): new java.io.FileReader(String)<br/>
+<br/>
+<br/>In file RSAUtils.java,
+					
+						line 35<br/>In class org.fogbowcloud.manager.core.plugins.util.RSAUtils<br/>In method org.fogbowcloud.manager.core.plugins.util.RSAUtils.getKey(String)<br/>Called method new java.io.FileReader(String)<br/>At RSAUtils.java:[line 35]<br/>At RSAUtils.java:[line 35]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.util.RSAUtils.savePrivateKey(PrivateKey): new String(byte[])<br/>
+<br/>
+<br/>In file RSAUtils.java,
+					
+						line 164<br/>In class org.fogbowcloud.manager.core.plugins.util.RSAUtils<br/>In method org.fogbowcloud.manager.core.plugins.util.RSAUtils.savePrivateKey(PrivateKey)<br/>Called method new String(byte[])<br/>At RSAUtils.java:[line 164]<br/>At RSAUtils.java:[line 164]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.plugins.util.RSAUtils.savePublicKey(PublicKey): new String(byte[])<br/>
+<br/>
+<br/>In file RSAUtils.java,
+					
+						line 152<br/>In class org.fogbowcloud.manager.core.plugins.util.RSAUtils<br/>In method org.fogbowcloud.manager.core.plugins.util.RSAUtils.savePublicKey(PublicKey)<br/>Called method new String(byte[])<br/>At RSAUtils.java:[line 152]<br/>At RSAUtils.java:[line 152]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in new org.fogbowcloud.manager.core.plugins.util.VhdFooter(ByteBuffer): new String(byte[])<br/>
+<br/>
+<br/>In file VhdFooter.java,
+					
+						line 99<br/>In class org.fogbowcloud.manager.core.plugins.util.VhdFooter<br/>In method new org.fogbowcloud.manager.core.plugins.util.VhdFooter(ByteBuffer)<br/>Called method new String(byte[])<br/>At VhdFooter.java:[line 99]<br/>At VhdFooter.java:[line 99]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.UserdataUtils.createBase64Command(Order, Properties): new java.io.FileReader(File)<br/>
+<br/>
+<br/>In file UserdataUtils.java,
+					
+						line 76<br/>In class org.fogbowcloud.manager.core.UserdataUtils<br/>In method org.fogbowcloud.manager.core.UserdataUtils.createBase64Command(Order, Properties)<br/>Called method new java.io.FileReader(File)<br/>At UserdataUtils.java:[line 76]<br/>At UserdataUtils.java:[line 76]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.UserdataUtils.createBase64Command(Order, Properties): new java.io.FileReader(String)<br/>
+<br/>
+<br/>In file UserdataUtils.java,
+					
+						line 72<br/>In class org.fogbowcloud.manager.core.UserdataUtils<br/>In method org.fogbowcloud.manager.core.UserdataUtils.createBase64Command(Order, Properties)<br/>Called method new java.io.FileReader(String)<br/>At UserdataUtils.java:[line 72]<br/>At UserdataUtils.java:[line 72]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.core.UserdataUtils.createBase64Command(Order, Properties): new String(byte[])<br/>
+<br/>
+<br/>In file UserdataUtils.java,
+					
+						line 82<br/>In class org.fogbowcloud.manager.core.UserdataUtils<br/>In method org.fogbowcloud.manager.core.UserdataUtils.createBase64Command(Order, Properties)<br/>Called method new String(byte[])<br/>At UserdataUtils.java:[line 82]<br/>At UserdataUtils.java:[line 82]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.occi.instance.ComputeServerResource.convertUserData(Properties, List, List, Map, Map): new String(byte[])<br/>
+<br/>
+<br/>In file ComputeServerResource.java,
+					
+						line 497<br/>In class org.fogbowcloud.manager.occi.instance.ComputeServerResource<br/>In method org.fogbowcloud.manager.occi.instance.ComputeServerResource.convertUserData(Properties, List, List, Map, Map)<br/>Called method new String(byte[])<br/>At ComputeServerResource.java:[line 497]<br/>At ComputeServerResource.java:[line 497]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.occi.instance.ComputeServerResource.convertUserData(Properties, List, List, Map, Map): String.getBytes()<br/>
+<br/>
+<br/>In file ComputeServerResource.java,
+					
+						line 502<br/>In class org.fogbowcloud.manager.occi.instance.ComputeServerResource<br/>In method org.fogbowcloud.manager.occi.instance.ComputeServerResource.convertUserData(Properties, List, List, Map, Map)<br/>Called method String.getBytes()<br/>At ComputeServerResource.java:[line 502]<br/>At ComputeServerResource.java:[line 502]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.occi.instance.ComputeServerResource.normalizeAuthToken(String): new String(byte[])<br/>
+<br/>
+<br/>In file ComputeServerResource.java,
+					
+						line 671<br/>In class org.fogbowcloud.manager.occi.instance.ComputeServerResource<br/>In method org.fogbowcloud.manager.occi.instance.ComputeServerResource.normalizeAuthToken(String)<br/>Called method new String(byte[])<br/>At ComputeServerResource.java:[line 671]<br/>At ComputeServerResource.java:[line 671]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.occi.network.NetworkServerResource.normalizeAuthToken(String): new String(byte[])<br/>
+<br/>
+<br/>In file NetworkServerResource.java,
+					
+						line 369<br/>In class org.fogbowcloud.manager.occi.network.NetworkServerResource<br/>In method org.fogbowcloud.manager.occi.network.NetworkServerResource.normalizeAuthToken(String)<br/>Called method new String(byte[])<br/>At NetworkServerResource.java:[line 369]<br/>At NetworkServerResource.java:[line 369]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.occi.order.OrderServerResource.normalizeAuthToken(String): new String(byte[])<br/>
+<br/>
+<br/>In file OrderServerResource.java,
+					
+						line 558<br/>In class org.fogbowcloud.manager.occi.order.OrderServerResource<br/>In method org.fogbowcloud.manager.occi.order.OrderServerResource.normalizeAuthToken(String)<br/>Called method new String(byte[])<br/>At OrderServerResource.java:[line 558]<br/>At OrderServerResource.java:[line 558]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Found reliance on default encoding in org.fogbowcloud.manager.occi.storage.StorageLinkServerResource.normalizeAuthToken(String): new String(byte[])<br/>
+<br/>
+<br/>In file StorageLinkServerResource.java,
+					
+						line 323<br/>In class org.fogbowcloud.manager.occi.storage.StorageLinkServerResource<br/>In method org.fogbowcloud.manager.occi.storage.StorageLinkServerResource.normalizeAuthToken(String)<br/>Called method new String(byte[])<br/>At StorageLinkServerResource.java:[line 323]<br/>At StorageLinkServerResource.java:[line 323]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin.V3_TOKENS_ENDPOINT_PATH isn't final but should be<br/>
+<br/>
+<br/>In file KeystoneV3IdentityPlugin.java,
+					
+						line 53<br/>In class org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin<br/>Field org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin.V3_TOKENS_ENDPOINT_PATH<br/>At KeystoneV3IdentityPlugin.java:[line 53]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.identity.openstackv2.KeystoneIdentityPlugin.V2_TENANTS_ENDPOINT_PATH isn't final but should be<br/>
+<br/>
+<br/>In file KeystoneIdentityPlugin.java,
+					
+						line 69<br/>In class org.fogbowcloud.manager.core.plugins.identity.openstackv2.KeystoneIdentityPlugin<br/>Field org.fogbowcloud.manager.core.plugins.identity.openstackv2.KeystoneIdentityPlugin.V2_TENANTS_ENDPOINT_PATH<br/>At KeystoneIdentityPlugin.java:[line 69]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.identity.openstackv2.KeystoneIdentityPlugin.V2_TOKENS_ENDPOINT_PATH isn't final but should be<br/>
+<br/>
+<br/>In file KeystoneIdentityPlugin.java,
+					
+						line 68<br/>In class org.fogbowcloud.manager.core.plugins.identity.openstackv2.KeystoneIdentityPlugin<br/>Field org.fogbowcloud.manager.core.plugins.identity.openstackv2.KeystoneIdentityPlugin.V2_TOKENS_ENDPOINT_PATH<br/>At KeystoneIdentityPlugin.java:[line 68]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.localcredentails.MapperHelper.FOGBOW_DEFAULTS isn't final but should be<br/>
+<br/>
+<br/>In file MapperHelper.java,
+					
+						line 13<br/>In class org.fogbowcloud.manager.core.plugins.localcredentails.MapperHelper<br/>Field org.fogbowcloud.manager.core.plugins.localcredentails.MapperHelper.FOGBOW_DEFAULTS<br/>At MapperHelper.java:[line 13]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.localcredentails.MapperHelper.MAPPER_PREFIX isn't final but should be<br/>
+<br/>
+<br/>In file MapperHelper.java,
+					
+						line 11<br/>In class org.fogbowcloud.manager.core.plugins.localcredentails.MapperHelper<br/>Field org.fogbowcloud.manager.core.plugins.localcredentails.MapperHelper.MAPPER_PREFIX<br/>At MapperHelper.java:[line 11]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.order.Order.SEPARATOR_GLOBAL_ID isn't final but should be<br/>
+<br/>
+<br/>In file Order.java,
+					
+						line 17<br/>In class org.fogbowcloud.manager.occi.order.Order<br/>Field org.fogbowcloud.manager.occi.order.Order.SEPARATOR_GLOBAL_ID<br/>At Order.java:[line 17]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin$Response.getHeaders() may expose internal representation by returning KeystoneV3IdentityPlugin$Response.headers<br/>
+<br/>
+<br/>In file KeystoneV3IdentityPlugin.java,
+					
+						line 262<br/>In class org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin$Response<br/>In method org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin$Response.getHeaders()<br/>Field org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin$Response.headers<br/>At KeystoneV3IdentityPlugin.java:[line 262]<br/>At KeystoneV3IdentityPlugin.java:[line 262]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>new org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin$Response(KeystoneV3IdentityPlugin, String, Header[]) may expose internal representation by storing an externally mutable object into KeystoneV3IdentityPlugin$Response.headers<br/>
+<br/>
+<br/>In file KeystoneV3IdentityPlugin.java,
+					
+						line 254<br/>In class org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin$Response<br/>In method new org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin$Response(KeystoneV3IdentityPlugin, String, Header[])<br/>Field org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin$Response.headers<br/>Local variable named headers<br/>At KeystoneV3IdentityPlugin.java:[line 254]<br/>At KeystoneV3IdentityPlugin.java:[line 254]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#MS_PKGPROTECT">Field should be package protected</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.network.openstack.OpenStackV2NetworkPlugin.DEFAULT_DNS_NAME_SERVERS should be package protected<br/>
+<br/>
+<br/>In file OpenStackV2NetworkPlugin.java,
+					
+						line 82<br/>In class org.fogbowcloud.manager.core.plugins.network.openstack.OpenStackV2NetworkPlugin<br/>Field org.fogbowcloud.manager.core.plugins.network.openstack.OpenStackV2NetworkPlugin.DEFAULT_DNS_NAME_SERVERS<br/>At OpenStackV2NetworkPlugin.java:[line 82]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#MS_PKGPROTECT">Field should be package protected</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.util.VhdFooter.COOKIE should be package protected<br/>
+<br/>
+<br/>In file VhdFooter.java,
+					
+						line 16<br/>In class org.fogbowcloud.manager.core.plugins.util.VhdFooter<br/>Field org.fogbowcloud.manager.core.plugins.util.VhdFooter.COOKIE<br/>At VhdFooter.java:[line 16]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#MS_PKGPROTECT">Field should be package protected</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.DataStoreHelper.dataStoreFolderExecution should be package protected<br/>
+<br/>
+<br/>In file DataStoreHelper.java,
+					
+						line 8<br/>In class org.fogbowcloud.manager.occi.DataStoreHelper<br/>Field org.fogbowcloud.manager.occi.DataStoreHelper.dataStoreFolderExecution<br/>At DataStoreHelper.java:[line 8]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_MT_CORRECTNESS">Multithreaded correctness Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#IS2_INCONSISTENT_SYNC">Inconsistent synchronization</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Inconsistent synchronization of org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackNovaV2ComputePlugin.flavors; locked 66% of time<br/>
+<br/>
+<br/>In file OpenStackNovaV2ComputePlugin.java,
+					
+						line 787<br/>In class org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackNovaV2ComputePlugin<br/>Field org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackNovaV2ComputePlugin.flavors<br/>Synchronized 66% of the time<br/>Unsynchronized access at OpenStackNovaV2ComputePlugin.java:[line 787]<br/>Unsynchronized access at OpenStackNovaV2ComputePlugin.java:[line 791]<br/>Synchronized access at OpenStackNovaV2ComputePlugin.java:[line 212]<br/>Synchronized access at OpenStackNovaV2ComputePlugin.java:[line 254]<br/>Synchronized access at OpenStackNovaV2ComputePlugin.java:[line 263]<br/>Synchronized access at OpenStackNovaV2ComputePlugin.java:[line 224]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_PERFORMANCE">Performance Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.ManagerController.getMaxCapacityDefaultUser()<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 418<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.getMaxCapacityDefaultUser()<br/>Called method Integer.intValue()<br/>Should call Integer.parseInt(String) instead<br/>At ManagerController.java:[line 418]<br/>At ManagerController.java:[line 418]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.ManagerController.timoutReached(long)<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 1862<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.timoutReached(long)<br/>Called method Integer.intValue()<br/>Should call Integer.parseInt(String) instead<br/>At ManagerController.java:[line 1862]<br/>At ManagerController.java:[line 1862]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.ManagerController.triggerAccountingUpdater()<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 325<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.triggerAccountingUpdater()<br/>Called method Long.longValue()<br/>Should call Long.parseLong(String) instead<br/>At ManagerController.java:[line 325]<br/>At ManagerController.java:[line 325]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.ManagerController.triggerCapacityControllerUpdater()<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 381<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.triggerCapacityControllerUpdater()<br/>Called method Long.longValue()<br/>Should call Long.parseLong(String) instead<br/>At ManagerController.java:[line 381]<br/>At ManagerController.java:[line 381]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.ManagerController.triggerGarbageCollector()<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 463<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.triggerGarbageCollector()<br/>Called method Long.longValue()<br/>Should call Long.parseLong(String) instead<br/>At ManagerController.java:[line 463]<br/>At ManagerController.java:[line 463]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.ManagerController.triggerInstancesMonitor()<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 1451<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.triggerInstancesMonitor()<br/>Called method Long.longValue()<br/>Should call Long.parseLong(String) instead<br/>At ManagerController.java:[line 1451]<br/>At ManagerController.java:[line 1451]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.ManagerController.triggerOrderDBUpdater()<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 1383<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.triggerOrderDBUpdater()<br/>Called method Long.longValue()<br/>Should call Long.parseLong(String) instead<br/>At ManagerController.java:[line 1383]<br/>At ManagerController.java:[line 1383]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.ManagerController.triggerOrderScheduler()<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 1719<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.triggerOrderScheduler()<br/>Called method Long.longValue()<br/>Should call Long.parseLong(String) instead<br/>At ManagerController.java:[line 1719]<br/>At ManagerController.java:[line 1719]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.ManagerController.triggerServedOrderMonitoring()<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 1256<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.triggerServedOrderMonitoring()<br/>Called method Long.longValue()<br/>Should call Long.parseLong(String) instead<br/>At ManagerController.java:[line 1256]<br/>At ManagerController.java:[line 1256]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.ManagerController.wakeUpSleepingHosts(Order)<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 1601<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.wakeUpSleepingHosts(Order)<br/>Called method Integer.intValue()<br/>Should call Integer.parseInt(String) instead<br/>At ManagerController.java:[line 1601]<br/>At ManagerController.java:[line 1601]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.plugins.compute.cloudstack.CloudStackComputePlugin.getResourcesInfo(Token)<br/>
+<br/>
+<br/>In file CloudStackComputePlugin.java,
+					
+						line 390<br/>In class org.fogbowcloud.manager.core.plugins.compute.cloudstack.CloudStackComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.cloudstack.CloudStackComputePlugin.getResourcesInfo(Token)<br/>Called method Integer.intValue()<br/>Should call Integer.parseInt(String) instead<br/>At CloudStackComputePlugin.java:[line 390]<br/>At CloudStackComputePlugin.java:[line 390]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_TOSTRING">Method allocates a boxed primitive just to call toString</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Primitive boxed just to call toString in org.fogbowcloud.manager.core.plugins.compute.ec2.EC2ComputePlugin.storageToGB(String)<br/>
+<br/>
+<br/>In file EC2ComputePlugin.java,
+					
+						line 564<br/>In class org.fogbowcloud.manager.core.plugins.compute.ec2.EC2ComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.ec2.EC2ComputePlugin.storageToGB(String)<br/>Called method Integer.toString()<br/>Should call Integer.toString(int) instead<br/>At EC2ComputePlugin.java:[line 564]<br/>At EC2ComputePlugin.java:[line 564]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin.attach(Token, List, Map)<br/>
+<br/>
+<br/>In file OpenNebulaComputePlugin.java,
+					
+						line 851<br/>In class org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin.attach(Token, List, Map)<br/>Called method Integer.intValue()<br/>Should call Integer.parseInt(String) instead<br/>At OpenNebulaComputePlugin.java:[line 851]<br/>At OpenNebulaComputePlugin.java:[line 851]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin.getAttachmentId(String, String, Client)<br/>
+<br/>
+<br/>In file OpenNebulaComputePlugin.java,
+					
+						line 864<br/>In class org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin.getAttachmentId(String, String, Client)<br/>Called method Integer.intValue()<br/>Should call Integer.parseInt(String) instead<br/>At OpenNebulaComputePlugin.java:[line 864]<br/>At OpenNebulaComputePlugin.java:[line 864]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin.getMinimumValueForRequirement(String, String, int)<br/>
+<br/>
+<br/>In file OpenNebulaComputePlugin.java,
+					
+						line 776<br/>In class org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin.getMinimumValueForRequirement(String, String, int)<br/>Called method Integer.intValue()<br/>Should call Integer.parseInt(String) instead<br/>At OpenNebulaComputePlugin.java:[line 776]<br/>At OpenNebulaComputePlugin.java:[line 776]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Boxing/unboxing to parse a primitive org.fogbowcloud.manager.core.plugins.storage.opennebula.OpenNebulaStoragePlugin.createInstance(Image)<br/>
+<br/>
+<br/>In file OpenNebulaStoragePlugin.java,
+					
+						line 166<br/>In class org.fogbowcloud.manager.core.plugins.storage.opennebula.OpenNebulaStoragePlugin<br/>In method org.fogbowcloud.manager.core.plugins.storage.opennebula.OpenNebulaStoragePlugin.createInstance(Image)<br/>Called method Integer.intValue()<br/>Should call Integer.parseInt(String) instead<br/>At OpenNebulaStoragePlugin.java:[line 166]<br/>At OpenNebulaStoragePlugin.java:[line 166]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.findNextLUN(String, ComputeManagementClient) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead<br/>
+<br/>
+<br/>In file AzureComputePlugin.java,
+					
+						line 815<br/>In class org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.findNextLUN(String, ComputeManagementClient)<br/>Called method new Integer(int)<br/>Should call Integer.valueOf(int) instead<br/>At AzureComputePlugin.java:[line 815]<br/>At AzureComputePlugin.java:[line 815]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.getDiskLogicalUnitNumber(ComputeManagementClient, String, String) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead<br/>
+<br/>
+<br/>In file AzureComputePlugin.java,
+					
+						line 893<br/>In class org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.getDiskLogicalUnitNumber(ComputeManagementClient, String, String)<br/>Called method new Integer(int)<br/>Should call Integer.valueOf(int) instead<br/>At AzureComputePlugin.java:[line 893]<br/>At AzureComputePlugin.java:[line 893]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.storage.StorageServerResource.post() invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead<br/>
+<br/>
+<br/>In file StorageServerResource.java,
+					
+						line 213<br/>In class org.fogbowcloud.manager.occi.storage.StorageServerResource<br/>In method org.fogbowcloud.manager.occi.storage.StorageServerResource.post()<br/>Called method new Integer(int)<br/>Should call Integer.valueOf(int) instead<br/>At StorageServerResource.java:[line 213]<br/>At StorageServerResource.java:[line 213]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_NEXTINT_VIA_NEXTDOUBLE">Use the nextInt method of Random rather than nextDouble to generate a random integer</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.createRoleList(String, String, String, String, String, String, String, ComputeManagementClient) uses the nextDouble method of Random to generate a random integer; using nextInt is more efficient<br/>
+<br/>
+<br/>In file AzureComputePlugin.java,
+					
+						line 631<br/>In class org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.createRoleList(String, String, String, String, String, String, String, ComputeManagementClient)<br/>At AzureComputePlugin.java:[line 631]<br/>At AzureComputePlugin.java:[line 631]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_NEXTINT_VIA_NEXTDOUBLE">Use the nextInt method of Random rather than nextDouble to generate a random integer</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.requestInstance(Token, Map, String, ComputeManagementClient) uses the nextDouble method of Random to generate a random integer; using nextInt is more efficient<br/>
+<br/>
+<br/>In file AzureComputePlugin.java,
+					
+						line 190<br/>In class org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.azure.AzureComputePlugin.requestInstance(Token, Map, String, ComputeManagementClient)<br/>At AzureComputePlugin.java:[line 190]<br/>At AzureComputePlugin.java:[line 190]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_STRING_VOID_CTOR">Method invokes inefficient new String() constructor</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.identity.voms.VomsIdentityPlugin.getForwardableToken(Token) invokes inefficient new String() constructor<br/>
+<br/>
+<br/>In file VomsIdentityPlugin.java,
+					
+						line 376<br/>In class org.fogbowcloud.manager.core.plugins.identity.voms.VomsIdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.voms.VomsIdentityPlugin.getForwardableToken(Token)<br/>At VomsIdentityPlugin.java:[line 376]<br/>At VomsIdentityPlugin.java:[line 376]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_NEXTINT_VIA_NEXTDOUBLE">Use the nextInt method of Random rather than nextDouble to generate a random integer</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.network.azure.AzureNetworkPlugin.requestInstance(Token, List, Map) uses the nextDouble method of Random to generate a random integer; using nextInt is more efficient<br/>
+<br/>
+<br/>In file AzureNetworkPlugin.java,
+					
+						line 63<br/>In class org.fogbowcloud.manager.core.plugins.network.azure.AzureNetworkPlugin<br/>In method org.fogbowcloud.manager.core.plugins.network.azure.AzureNetworkPlugin.requestInstance(Token, List, Map)<br/>At AzureNetworkPlugin.java:[line 63]<br/>At AzureNetworkPlugin.java:[line 63]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_NEXTINT_VIA_NEXTDOUBLE">Use the nextInt method of Random rather than nextDouble to generate a random integer</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.network.cloudstack.CloudStackNetworkPlugin.requestInstance(Token, List, Map) uses the nextDouble method of Random to generate a random integer; using nextInt is more efficient<br/>
+<br/>
+<br/>In file CloudStackNetworkPlugin.java,
+					
+						line 90<br/>In class org.fogbowcloud.manager.core.plugins.network.cloudstack.CloudStackNetworkPlugin<br/>In method org.fogbowcloud.manager.core.plugins.network.cloudstack.CloudStackNetworkPlugin.requestInstance(Token, List, Map)<br/>At CloudStackNetworkPlugin.java:[line 90]<br/>At CloudStackNetworkPlugin.java:[line 90]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_NEXTINT_VIA_NEXTDOUBLE">Use the nextInt method of Random rather than nextDouble to generate a random integer</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin.requestInstance(Token, List, Map) uses the nextDouble method of Random to generate a random integer; using nextInt is more efficient<br/>
+<br/>
+<br/>In file OpenNebulaNetworkPlugin.java,
+					
+						line 83<br/>In class org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin<br/>In method org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin.requestInstance(Token, List, Map)<br/>At OpenNebulaNetworkPlugin.java:[line 83]<br/>At OpenNebulaNetworkPlugin.java:[line 83]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_STRING_VOID_CTOR">Method invokes inefficient new String() constructor</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.instance.Instance.emptyIfNull(String) invokes inefficient new String() constructor<br/>
+<br/>
+<br/>In file Instance.java,
+					
+						line 116<br/>In class org.fogbowcloud.manager.occi.instance.Instance<br/>In method org.fogbowcloud.manager.occi.instance.Instance.emptyIfNull(String)<br/>At Instance.java:[line 116]<br/>At Instance.java:[line 116]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_STRING_VOID_CTOR">Method invokes inefficient new String() constructor</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.member.MemberServerResource.generateResponse(List) invokes inefficient new String() constructor<br/>
+<br/>
+<br/>In file MemberServerResource.java,
+					
+						line 28<br/>In class org.fogbowcloud.manager.occi.member.MemberServerResource<br/>In method org.fogbowcloud.manager.occi.member.MemberServerResource.generateResponse(List)<br/>At MemberServerResource.java:[line 28]<br/>At MemberServerResource.java:[line 28]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DM_STRING_CTOR">Method invokes inefficient new String(String) constructor</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.TokenServerResource.fetch() invokes inefficient new String(String) constructor<br/>
+<br/>
+<br/>In file TokenServerResource.java,
+					
+						line 25<br/>In class org.fogbowcloud.manager.occi.TokenServerResource<br/>In method org.fogbowcloud.manager.occi.TokenServerResource.fetch()<br/>At TokenServerResource.java:[line 25]<br/>At TokenServerResource.java:[line 25]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DM_STRING_VOID_CTOR">Method invokes inefficient new String() constructor</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.TokenServerResource.generateResponse(Token) invokes inefficient new String() constructor<br/>
+<br/>
+<br/>In file TokenServerResource.java,
+					
+						line 33<br/>In class org.fogbowcloud.manager.occi.TokenServerResource<br/>In method org.fogbowcloud.manager.occi.TokenServerResource.generateResponse(Token)<br/>At TokenServerResource.java:[line 33]<br/>At TokenServerResource.java:[line 33]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin.getExtraHeaders(List, Map, Token) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file OpenNebulaOCCIComputePlugin.java,
+					
+						line 67<br/>In class org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin.getExtraHeaders(List, Map, Token)<br/>At OpenNebulaOCCIComputePlugin.java:[line 67]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackOCCIComputePlugin.convertRequestToOcci(Request, Series) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file OpenStackOCCIComputePlugin.java,
+					
+						line 174<br/>In class org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackOCCIComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackOCCIComputePlugin.convertRequestToOcci(Request, Series)<br/>At OpenStackOCCIComputePlugin.java:[line 174]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.identity.naf.RSAUtils.getKey(String) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file RSAUtils.java,
+					
+						line 30<br/>In class org.fogbowcloud.manager.core.plugins.identity.naf.RSAUtils<br/>In method org.fogbowcloud.manager.core.plugins.identity.naf.RSAUtils.getKey(String)<br/>At RSAUtils.java:[line 30]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.util.RSAUtils.getKey(String) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file RSAUtils.java,
+					
+						line 38<br/>In class org.fogbowcloud.manager.core.plugins.util.RSAUtils<br/>In method org.fogbowcloud.manager.core.plugins.util.RSAUtils.getKey(String)<br/>At RSAUtils.java:[line 38]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.instance.ComputeServerResource.generateResponse(List) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file ComputeServerResource.java,
+					
+						line 819<br/>In class org.fogbowcloud.manager.occi.instance.ComputeServerResource<br/>In method org.fogbowcloud.manager.occi.instance.ComputeServerResource.generateResponse(List)<br/>At ComputeServerResource.java:[line 819]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.instance.ComputeServerResource.generateURIListResponse(List, HttpRequest) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file ComputeServerResource.java,
+					
+						line 715<br/>In class org.fogbowcloud.manager.occi.instance.ComputeServerResource<br/>In method org.fogbowcloud.manager.occi.instance.ComputeServerResource.generateURIListResponse(List, HttpRequest)<br/>At ComputeServerResource.java:[line 715]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.instance.Instance.toOCCIMessageFormatDetails() concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file Instance.java,
+					
+						line 127<br/>In class org.fogbowcloud.manager.occi.instance.Instance<br/>In method org.fogbowcloud.manager.occi.instance.Instance.toOCCIMessageFormatDetails()<br/>At Instance.java:[line 127]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.instance.Instance$Link.toOCCIMessageFormatLink() concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file Instance.java,
+					
+						line 249<br/>In class org.fogbowcloud.manager.occi.instance.Instance$Link<br/>In method org.fogbowcloud.manager.occi.instance.Instance$Link.toOCCIMessageFormatLink()<br/>At Instance.java:[line 249]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.model.Resource.actionsToHeader() concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file Resource.java,
+					
+						line 128<br/>In class org.fogbowcloud.manager.occi.model.Resource<br/>In method org.fogbowcloud.manager.occi.model.Resource.actionsToHeader()<br/>At Resource.java:[line 128]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.model.Resource.attributesToHeader() concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file Resource.java,
+					
+						line 136<br/>In class org.fogbowcloud.manager.occi.model.Resource<br/>In method org.fogbowcloud.manager.occi.model.Resource.attributesToHeader()<br/>At Resource.java:[line 136]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.network.NetworkServerResource.generateResponse(List) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file NetworkServerResource.java,
+					
+						line 340<br/>In class org.fogbowcloud.manager.occi.network.NetworkServerResource<br/>In method org.fogbowcloud.manager.occi.network.NetworkServerResource.generateResponse(List)<br/>At NetworkServerResource.java:[line 340]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.network.NetworkServerResource.generateURIListResponse(List, HttpRequest) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file NetworkServerResource.java,
+					
+						line 354<br/>In class org.fogbowcloud.manager.occi.network.NetworkServerResource<br/>In method org.fogbowcloud.manager.occi.network.NetworkServerResource.generateURIListResponse(List, HttpRequest)<br/>At NetworkServerResource.java:[line 354]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.order.OrderServerResource.generateLocationHeader(List, String) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file OrderServerResource.java,
+					
+						line 401<br/>In class org.fogbowcloud.manager.occi.order.OrderServerResource<br/>In method org.fogbowcloud.manager.occi.order.OrderServerResource.generateLocationHeader(List, String)<br/>At OrderServerResource.java:[line 401]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.order.OrderServerResource.generateTextPlainResponse(List, HttpRequest, boolean) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file OrderServerResource.java,
+					
+						line 532<br/>In class org.fogbowcloud.manager.occi.order.OrderServerResource<br/>In method org.fogbowcloud.manager.occi.order.OrderServerResource.generateTextPlainResponse(List, HttpRequest, boolean)<br/>At OrderServerResource.java:[line 532]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.order.OrderServerResource.generateTextPlainResponseOneOrder(Order) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file OrderServerResource.java,
+					
+						line 197<br/>In class org.fogbowcloud.manager.occi.order.OrderServerResource<br/>In method org.fogbowcloud.manager.occi.order.OrderServerResource.generateTextPlainResponseOneOrder(Order)<br/>At OrderServerResource.java:[line 197]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.order.OrderServerResource.generateURIListResponse(List, HttpRequest, boolean) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file OrderServerResource.java,
+					
+						line 176<br/>In class org.fogbowcloud.manager.occi.order.OrderServerResource<br/>In method org.fogbowcloud.manager.occi.order.OrderServerResource.generateURIListResponse(List, HttpRequest, boolean)<br/>At OrderServerResource.java:[line 176]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.QueryServerResource.filterQuery(List, String, boolean) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file QueryServerResource.java,
+					
+						line 170<br/>In class org.fogbowcloud.manager.occi.QueryServerResource<br/>In method org.fogbowcloud.manager.occi.QueryServerResource.filterQuery(List, String, boolean)<br/>At QueryServerResource.java:[line 170]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.QueryServerResource.generateResponse(List, String, List, String) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file QueryServerResource.java,
+					
+						line 122<br/>In class org.fogbowcloud.manager.occi.QueryServerResource<br/>In method org.fogbowcloud.manager.occi.QueryServerResource.generateResponse(List, String, List, String)<br/>At QueryServerResource.java:[line 122]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.storage.StorageLinkServerResource.generateResponse(List) concatenates strings using + in a loop<br/>
+<br/>
+<br/>In file StorageLinkServerResource.java,
+					
+						line 193<br/>In class org.fogbowcloud.manager.occi.storage.StorageLinkServerResource<br/>In method org.fogbowcloud.manager.occi.storage.StorageLinkServerResource.generateResponse(List)<br/>At StorageLinkServerResource.java:[line 193]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should org.fogbowcloud.manager.core.ManagerController$FailedBatch be a _static_ inner class?<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						lines 2300
+						    to 2327<br/>In class org.fogbowcloud.manager.core.ManagerController$FailedBatch<br/>At ManagerController.java:[lines 2300-2327]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should org.fogbowcloud.manager.core.plugins.compute.occi.OCCIComputePlugin$Response be a _static_ inner class?<br/>
+<br/>
+<br/>In file OCCIComputePlugin.java,
+					
+						lines 361
+						    to 371<br/>In class org.fogbowcloud.manager.core.plugins.compute.occi.OCCIComputePlugin$Response<br/>At OCCIComputePlugin.java:[lines 361-371]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should org.fogbowcloud.manager.core.plugins.identity.naf.NAFIdentityPlugin$AccessIdFormat be a _static_ inner class?<br/>
+<br/>
+<br/>In file NAFIdentityPlugin.java,
+					
+						lines 230
+						    to 246<br/>In class org.fogbowcloud.manager.core.plugins.identity.naf.NAFIdentityPlugin$AccessIdFormat<br/>At NAFIdentityPlugin.java:[lines 230-246]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin$Response be a _static_ inner class?<br/>
+<br/>
+<br/>In file KeystoneV3IdentityPlugin.java,
+					
+						lines 252
+						    to 262<br/>In class org.fogbowcloud.manager.core.plugins.identity.openstack.KeystoneV3IdentityPlugin$Response<br/>At KeystoneV3IdentityPlugin.java:[lines 252-262]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should org.fogbowcloud.manager.core.plugins.identity.simpletoken.SimpleTokenIdentityPlugin$TokenHelper be a _static_ inner class?<br/>
+<br/>
+<br/>In file SimpleTokenIdentityPlugin.java,
+					
+						lines 84
+						    to 103<br/>In class org.fogbowcloud.manager.core.plugins.identity.simpletoken.SimpleTokenIdentityPlugin$TokenHelper<br/>At SimpleTokenIdentityPlugin.java:[lines 84-103]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should org.fogbowcloud.manager.core.plugins.util.SshClientPool$SSHClientFactory be a _static_ inner class?<br/>
+<br/>
+<br/>In file SshClientPool.java,
+					
+						lines 114
+						    to 130<br/>In class org.fogbowcloud.manager.core.plugins.util.SshClientPool$SSHClientFactory<br/>At SshClientPool.java:[lines 114-130]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Should org.fogbowcloud.manager.core.plugins.util.SshClientPool$SSHConnection be a _static_ inner class?<br/>
+<br/>
+<br/>In file SshClientPool.java,
+					
+						lines 138
+						    to 148<br/>In class org.fogbowcloud.manager.core.plugins.util.SshClientPool$SSHConnection<br/>At SshClientPool.java:[lines 138-148]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_ADDRESS_PREFIX; should this field be static?<br/>
+<br/>
+<br/>In file NetworkConfigModel.java,
+					
+						line 18<br/>In class org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel<br/>Field org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_ADDRESS_PREFIX<br/>At NetworkConfigModel.java:[line 18]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_NETWORK_ADDRESS; should this field be static?<br/>
+<br/>
+<br/>In file NetworkConfigModel.java,
+					
+						line 16<br/>In class org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel<br/>Field org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_NETWORK_ADDRESS<br/>At NetworkConfigModel.java:[line 16]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_NETWORK_NAME; should this field be static?<br/>
+<br/>
+<br/>In file NetworkConfigModel.java,
+					
+						line 14<br/>In class org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel<br/>Field org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_NETWORK_NAME<br/>At NetworkConfigModel.java:[line 14]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_NETWORK_REGION; should this field be static?<br/>
+<br/>
+<br/>In file NetworkConfigModel.java,
+					
+						line 17<br/>In class org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel<br/>Field org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_NETWORK_REGION<br/>At NetworkConfigModel.java:[line 17]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_SUBNETWORKS; should this field be static?<br/>
+<br/>
+<br/>In file NetworkConfigModel.java,
+					
+						line 19<br/>In class org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel<br/>Field org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_SUBNETWORKS<br/>At NetworkConfigModel.java:[line 19]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_SUBNETWORK_NAME; should this field be static?<br/>
+<br/>
+<br/>In file NetworkConfigModel.java,
+					
+						line 15<br/>In class org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel<br/>Field org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_SUBNETWORK_NAME<br/>At NetworkConfigModel.java:[line 15]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_VIRTUAL_SITES; should this field be static?<br/>
+<br/>
+<br/>In file NetworkConfigModel.java,
+					
+						line 12<br/>In class org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel<br/>Field org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.KEY_VIRTUAL_SITES<br/>At NetworkConfigModel.java:[line 12]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.TAG_ADRESS_PREFIX; should this field be static?<br/>
+<br/>
+<br/>In file NetworkConfigModel.java,
+					
+						line 21<br/>In class org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel<br/>Field org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.TAG_ADRESS_PREFIX<br/>At NetworkConfigModel.java:[line 21]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.TAG_SUBNET; should this field be static?<br/>
+<br/>
+<br/>In file NetworkConfigModel.java,
+					
+						line 22<br/>In class org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel<br/>Field org.fogbowcloud.manager.core.plugins.network.azure.NetworkConfigModel.TAG_SUBNET<br/>At NetworkConfigModel.java:[line 22]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.plugins.util.SshClientPool.DEFAULT_SCHEDULER_PERIOD; should this field be static?<br/>
+<br/>
+<br/>In file SshClientPool.java,
+					
+						line 22<br/>In class org.fogbowcloud.manager.core.plugins.util.SshClientPool<br/>Field org.fogbowcloud.manager.core.plugins.util.SshClientPool.DEFAULT_SCHEDULER_PERIOD<br/>At SshClientPool.java:[line 22]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.plugins.util.SshClientPool.TIMEOUT; should this field be static?<br/>
+<br/>
+<br/>In file SshClientPool.java,
+					
+						line 21<br/>In class org.fogbowcloud.manager.core.plugins.util.SshClientPool<br/>Field org.fogbowcloud.manager.core.plugins.util.SshClientPool.TIMEOUT<br/>At SshClientPool.java:[line 21]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.RequirementsHelper$FlavorComparator.MEM_VALUE_RELEVANCE; should this field be static?<br/>
+<br/>
+<br/>In file RequirementsHelper.java,
+					
+						line 326<br/>In class org.fogbowcloud.manager.core.RequirementsHelper$FlavorComparator<br/>Field org.fogbowcloud.manager.core.RequirementsHelper$FlavorComparator.MEM_VALUE_RELEVANCE<br/>At RequirementsHelper.java:[line 326]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Unread field: org.fogbowcloud.manager.core.RequirementsHelper$FlavorComparator.VCPU_VALUE_RELEVANCE; should this field be static?<br/>
+<br/>
+<br/>In file RequirementsHelper.java,
+					
+						line 327<br/>In class org.fogbowcloud.manager.core.RequirementsHelper$FlavorComparator<br/>Field org.fogbowcloud.manager.core.RequirementsHelper$FlavorComparator.VCPU_VALUE_RELEVANCE<br/>At RequirementsHelper.java:[line 327]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.ManagerController.getAllFogbowFederationInstances() makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 505<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.getAllFogbowFederationInstances()<br/>At ManagerController.java:[line 505]<br/>At ManagerController.java:[line 505]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.ManagerController.getResourcesInfo(Map, String, boolean) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 640<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.getResourcesInfo(Map, String, boolean)<br/>At ManagerController.java:[line 640]<br/>At ManagerController.java:[line 640]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.ManagerController$FailedBatch.getFailedBatchIdsPerType(ManagerController$FailedBatchType) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 2318<br/>In class org.fogbowcloud.manager.core.ManagerController$FailedBatch<br/>In method org.fogbowcloud.manager.core.ManagerController$FailedBatch.getFailedBatchIdsPerType(ManagerController$FailedBatchType)<br/>At ManagerController.java:[line 2318]<br/>At ManagerController.java:[line 2318]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.addMemberStatements(List, PreparedStatement, PreparedStatement) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file AccountingDataStore.java,
+					
+						line 159<br/>In class org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore<br/>In method org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.addMemberStatements(List, PreparedStatement, PreparedStatement)<br/>At AccountingDataStore.java:[line 159]<br/>At AccountingDataStore.java:[line 159]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.occi.OCCIComputePlugin.normalizeHeaders(Set) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file OCCIComputePlugin.java,
+					
+						line 176<br/>In class org.fogbowcloud.manager.core.plugins.compute.occi.OCCIComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.occi.OCCIComputePlugin.normalizeHeaders(Set)<br/>At OCCIComputePlugin.java:[line 176]<br/>At OCCIComputePlugin.java:[line 176]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.occi.OCCIComputePlugin.requestInstance(Token, List, Map, String) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file OCCIComputePlugin.java,
+					
+						line 142<br/>In class org.fogbowcloud.manager.core.plugins.compute.occi.OCCIComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.occi.OCCIComputePlugin.requestInstance(Token, List, Map, String)<br/>At OCCIComputePlugin.java:[line 142]<br/>At OCCIComputePlugin.java:[line 142]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackNovaV2ComputePlugin.detailFlavors(String, String, Map) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file OpenStackNovaV2ComputePlugin.java,
+					
+						line 236<br/>In class org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackNovaV2ComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackNovaV2ComputePlugin.detailFlavors(String, String, Map)<br/>At OpenStackNovaV2ComputePlugin.java:[line 236]<br/>At OpenStackNovaV2ComputePlugin.java:[line 236]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackOCCIComputePlugin.getExtraHeaders(List, Map, Token) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file OpenStackOCCIComputePlugin.java,
+					
+						line 78<br/>In class org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackOCCIComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.openstack.OpenStackOCCIComputePlugin.getExtraHeaders(List, Map, Token)<br/>At OpenStackOCCIComputePlugin.java:[line 78]<br/>At OpenStackOCCIComputePlugin.java:[line 78]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.identity.azure.AzureIdentityPlugin.createTokens(Properties) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file AzureIdentityPlugin.java,
+					
+						line 40<br/>In class org.fogbowcloud.manager.core.plugins.identity.azure.AzureIdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.azure.AzureIdentityPlugin.createTokens(Properties)<br/>At AzureIdentityPlugin.java:[line 40]<br/>At AzureIdentityPlugin.java:[line 40]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.identity.azure.AzureIdentityPlugin.getAccessID(Map) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file AzureIdentityPlugin.java,
+					
+						line 69<br/>In class org.fogbowcloud.manager.core.plugins.identity.azure.AzureIdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.azure.AzureIdentityPlugin.getAccessID(Map)<br/>Field org.fogbowcloud.manager.core.plugins.identity.azure.AzureIdentityPlugin.accessIDs<br/>At AzureIdentityPlugin.java:[line 69]<br/>At AzureIdentityPlugin.java:[line 69]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.core.plugins.identity.openstackv2.KeystoneIdentityPlugin.checkCredentialsInProperties() makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file KeystoneIdentityPlugin.java,
+					
+						line 311<br/>In class org.fogbowcloud.manager.core.plugins.identity.openstackv2.KeystoneIdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.openstackv2.KeystoneIdentityPlugin.checkCredentialsInProperties()<br/>At KeystoneIdentityPlugin.java:[line 311]<br/>At KeystoneIdentityPlugin.java:[line 311]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.instance.ComputeServerResource.filterInstances(List, List, List) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file ComputeServerResource.java,
+					
+						line 633<br/>In class org.fogbowcloud.manager.occi.instance.ComputeServerResource<br/>In method org.fogbowcloud.manager.occi.instance.ComputeServerResource.filterInstances(List, List, List)<br/>At ComputeServerResource.java:[line 633]<br/>At ComputeServerResource.java:[line 633]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.instance.Instance.toOCCIMessageFormatDetails() makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file Instance.java,
+					
+						line 137<br/>In class org.fogbowcloud.manager.occi.instance.Instance<br/>In method org.fogbowcloud.manager.occi.instance.Instance.toOCCIMessageFormatDetails()<br/>Field org.fogbowcloud.manager.occi.instance.Instance.attributes<br/>At Instance.java:[line 137]<br/>At Instance.java:[line 137]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.instance.Instance$Link.toOCCIMessageFormatLink() makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file Instance.java,
+					
+						line 247<br/>In class org.fogbowcloud.manager.occi.instance.Instance$Link<br/>In method org.fogbowcloud.manager.occi.instance.Instance$Link.toOCCIMessageFormatLink()<br/>At Instance.java:[line 247]<br/>At Instance.java:[line 247]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.order.OrderServerResource.generateTextPlainResponseOneOrder(Order) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file OrderServerResource.java,
+					
+						line 245<br/>In class org.fogbowcloud.manager.occi.order.OrderServerResource<br/>In method org.fogbowcloud.manager.occi.order.OrderServerResource.generateTextPlainResponseOneOrder(Order)<br/>At OrderServerResource.java:[line 245]<br/>At OrderServerResource.java:[line 245]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>org.fogbowcloud.manager.occi.storage.StorageLinkServerResource.generateTextPlainResponseStorageLink(StorageLinkRepository$StorageLink, String) makes inefficient use of keySet iterator instead of entrySet iterator<br/>
+<br/>
+<br/>In file StorageLinkServerResource.java,
+					
+						line 169<br/>In class org.fogbowcloud.manager.occi.storage.StorageLinkServerResource<br/>In method org.fogbowcloud.manager.occi.storage.StorageLinkServerResource.generateTextPlainResponseStorageLink(StorageLinkRepository$StorageLink, String)<br/>At StorageLinkServerResource.java:[line 169]<br/>At StorageLinkServerResource.java:[line 169]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_SECURITY">Security Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING">A prepared statement is generated from a nonconstant String</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>A prepared statement is generated from a nonconstant String in org.fogbowcloud.manager.occi.ManagerDataStore.countOrder(List) <br/>
+<br/>
+<br/>In file ManagerDataStore.java,
+					
+						line 311<br/>In class org.fogbowcloud.manager.occi.ManagerDataStore<br/>In method org.fogbowcloud.manager.occi.ManagerDataStore.countOrder(List)<br/>At ManagerDataStore.java:[line 311]<br/>At ManagerDataStore.java:[line 311]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="Warnings_STYLE">Dodgy code Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="2" cellpadding="5">
+<tr class="tableheader">
+<th align="left">Warning</th>
+<th align="left">Priority</th>
+<th align="left">Details</th>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#NS_DANGEROUS_NON_SHORT_CIRCUIT">Potentially dangerous use of non-short-circuit logic</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Potentially dangerous use of non-short-circuit logic in org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.update(List)<br/>
+<br/>
+<br/>In file AccountingDataStore.java,
+					
+						line 97<br/>In class org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore<br/>In method org.fogbowcloud.manager.core.plugins.accounting.AccountingDataStore.update(List)<br/>At AccountingDataStore.java:[line 97]<br/>At AccountingDataStore.java:[line 97]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</td>
+<td width="10%" valign="top">High</td>
+<td width="70%">
+<p>Write to static field org.fogbowcloud.manager.occi.model.ResourceRepository.instance from instance method org.fogbowcloud.manager.occi.model.ResourceRepository.reset()<br/>
+<br/>
+<br/>In file ResourceRepository.java,
+					
+						line 300<br/>In class org.fogbowcloud.manager.occi.model.ResourceRepository<br/>In method org.fogbowcloud.manager.occi.model.ResourceRepository.reset()<br/>Field org.fogbowcloud.manager.occi.model.ResourceRepository.instance<br/>At ResourceRepository.java:[line 300]<br/>At ResourceRepository.java:[line 300]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to network in org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin.createVMInstance(VirtualMachine)<br/>
+<br/>
+<br/>In file OpenNebulaComputePlugin.java,
+					
+						line 336<br/>In class org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin.createVMInstance(VirtualMachine)<br/>Local variable named network<br/>At OpenNebulaComputePlugin.java:[line 336]<br/>At OpenNebulaComputePlugin.java:[line 336]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to netCdir in org.fogbowcloud.manager.core.plugins.network.azure.AzureNetworkPlugin.createVirtualNetworkSite(String, String, String, String)<br/>
+<br/>
+<br/>In file AzureNetworkPlugin.java,
+					
+						line 172<br/>In class org.fogbowcloud.manager.core.plugins.network.azure.AzureNetworkPlugin<br/>In method org.fogbowcloud.manager.core.plugins.network.azure.AzureNetworkPlugin.createVirtualNetworkSite(String, String, String, String)<br/>Local variable named netCdir<br/>At AzureNetworkPlugin.java:[line 172]<br/>At AzureNetworkPlugin.java:[line 172]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to subnets in org.fogbowcloud.manager.core.plugins.network.ec2.EC2NetworkPlugin.getSubnetById(Token, String)<br/>
+<br/>
+<br/>In file EC2NetworkPlugin.java,
+					
+						line 197<br/>In class org.fogbowcloud.manager.core.plugins.network.ec2.EC2NetworkPlugin<br/>In method org.fogbowcloud.manager.core.plugins.network.ec2.EC2NetworkPlugin.getSubnetById(Token, String)<br/>Local variable named subnets<br/>At EC2NetworkPlugin.java:[line 197]<br/>At EC2NetworkPlugin.java:[line 197]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to allocation in org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin.requestInstance(Token, List, Map)<br/>
+<br/>
+<br/>In file OpenNebulaNetworkPlugin.java,
+					
+						line 79<br/>In class org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin<br/>In method org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin.requestInstance(Token, List, Map)<br/>Local variable named allocation<br/>At OpenNebulaNetworkPlugin.java:[line 79]<br/>At OpenNebulaNetworkPlugin.java:[line 79]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to label in org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin.requestInstance(Token, List, Map)<br/>
+<br/>
+<br/>In file OpenNebulaNetworkPlugin.java,
+					
+						line 80<br/>In class org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin<br/>In method org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin.requestInstance(Token, List, Map)<br/>Local variable named label<br/>At OpenNebulaNetworkPlugin.java:[line 80]<br/>At OpenNebulaNetworkPlugin.java:[line 80]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to vlanId in org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin.requestInstance(Token, List, Map)<br/>
+<br/>
+<br/>In file OpenNebulaNetworkPlugin.java,
+					
+						line 81<br/>In class org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin<br/>In method org.fogbowcloud.manager.core.plugins.network.opennebula.OpenNebulaNetworkPlugin.requestInstance(Token, List, Map)<br/>Local variable named vlanId<br/>At OpenNebulaNetworkPlugin.java:[line 81]<br/>At OpenNebulaNetworkPlugin.java:[line 81]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Dead store to validator in org.fogbowcloud.manager.Main.main(String[])<br/>
+<br/>
+<br/>In file Main.java,
+					
+						line 128<br/>In class org.fogbowcloud.manager.Main<br/>In method org.fogbowcloud.manager.Main.main(String[])<br/>Local variable named validator<br/>At Main.java:[line 128]<br/>At Main.java:[line 128]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">Possible null pointer dereference due to return value of called method</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Possible null pointer dereference in org.fogbowcloud.manager.core.plugins.identity.x509.X509IdentityPlugin.getCACertificates() due to return value of called method<br/>
+<br/>
+<br/>In file X509IdentityPlugin.java,
+					
+						line 166<br/>In class org.fogbowcloud.manager.core.plugins.identity.x509.X509IdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.x509.X509IdentityPlugin.getCACertificates()<br/>Value loaded from listOfFiles<br/>Dereferenced at X509IdentityPlugin.java:[line 166]<br/>Known null at X509IdentityPlugin.java:[line 165]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#NP_LOAD_OF_KNOWN_NULL_VALUE">Load of known null value</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Load of known null value in org.fogbowcloud.manager.occi.model.HeaderUtils.getAuthToken(Series, Response, String)<br/>
+<br/>
+<br/>In file HeaderUtils.java,
+					
+						line 70<br/>In class org.fogbowcloud.manager.occi.model.HeaderUtils<br/>In method org.fogbowcloud.manager.occi.model.HeaderUtils.getAuthToken(Series, Response, String)<br/>Value loaded from authorizationHeader<br/>At HeaderUtils.java:[line 70]<br/>At HeaderUtils.java:[line 70]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of orderResourceKind, which is known to be non-null in org.fogbowcloud.manager.core.ManagerController.getInstanceForRemoteMember(String)<br/>
+<br/>
+<br/>In file ManagerController.java,
+					
+						line 1313<br/>In class org.fogbowcloud.manager.core.ManagerController<br/>In method org.fogbowcloud.manager.core.ManagerController.getInstanceForRemoteMember(String)<br/>Value loaded from orderResourceKind<br/>Redundant null check at ManagerController.java:[line 1313]<br/>Redundant null check at ManagerController.java:[line 1313]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of org.fogbowcloud.manager.core.plugins.identity.cloudstack.CloudStackIdentityPlugin.getToken(String), which is known to be non-null in org.fogbowcloud.manager.core.plugins.identity.cloudstack.CloudStackIdentityPlugin.isValid(String)<br/>
+<br/>
+<br/>In file CloudStackIdentityPlugin.java,
+					
+						line 93<br/>In class org.fogbowcloud.manager.core.plugins.identity.cloudstack.CloudStackIdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.cloudstack.CloudStackIdentityPlugin.isValid(String)<br/>Return value of org.fogbowcloud.manager.core.plugins.identity.cloudstack.CloudStackIdentityPlugin.getToken(String) of type org.fogbowcloud.manager.occi.model.Token<br/>Redundant null check at CloudStackIdentityPlugin.java:[line 93]<br/>Redundant null check at CloudStackIdentityPlugin.java:[line 93]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of org.fogbowcloud.manager.core.plugins.ImageStoragePlugin$Extensions.valueOf(String), which is known to be non-null in org.fogbowcloud.manager.core.plugins.ImageStoragePlugin$Extensions.in(String)<br/>
+<br/>
+<br/>In file ImageStoragePlugin.java,
+					
+						line 12<br/>In class org.fogbowcloud.manager.core.plugins.ImageStoragePlugin$Extensions<br/>In method org.fogbowcloud.manager.core.plugins.ImageStoragePlugin$Extensions.in(String)<br/>Return value of org.fogbowcloud.manager.core.plugins.ImageStoragePlugin$Extensions.valueOf(String) of type org.fogbowcloud.manager.core.plugins.ImageStoragePlugin$Extensions<br/>Redundant null check at ImageStoragePlugin.java:[line 12]<br/>Redundant null check at ImageStoragePlugin.java:[line 12]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of value, which is known to be non-null in org.fogbowcloud.manager.core.RequirementsHelper.matches(Flavor, String)<br/>
+<br/>
+<br/>In file RequirementsHelper.java,
+					
+						line 119<br/>In class org.fogbowcloud.manager.core.RequirementsHelper<br/>In method org.fogbowcloud.manager.core.RequirementsHelper.matches(Flavor, String)<br/>Value loaded from value<br/>Return value of org.fogbowcloud.manager.core.model.Flavor.getCpu() of type String<br/>Redundant null check at RequirementsHelper.java:[line 119]<br/>Redundant null check at RequirementsHelper.java:[line 119]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of value, which is known to be non-null in org.fogbowcloud.manager.core.RequirementsHelper.matches(Flavor, String)<br/>
+<br/>
+<br/>In file RequirementsHelper.java,
+					
+						line 105<br/>In class org.fogbowcloud.manager.core.RequirementsHelper<br/>In method org.fogbowcloud.manager.core.RequirementsHelper.matches(Flavor, String)<br/>Value loaded from value<br/>Return value of org.fogbowcloud.manager.core.model.Flavor.getDisk() of type String<br/>Redundant null check at RequirementsHelper.java:[line 105]<br/>Redundant null check at RequirementsHelper.java:[line 105]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of value, which is known to be non-null in org.fogbowcloud.manager.core.RequirementsHelper.matches(Flavor, String)<br/>
+<br/>
+<br/>In file RequirementsHelper.java,
+					
+						line 112<br/>In class org.fogbowcloud.manager.core.RequirementsHelper<br/>In method org.fogbowcloud.manager.core.RequirementsHelper.matches(Flavor, String)<br/>Value loaded from value<br/>Return value of org.fogbowcloud.manager.core.model.Flavor.getMem() of type String<br/>Redundant null check at RequirementsHelper.java:[line 112]<br/>Redundant null check at RequirementsHelper.java:[line 112]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of josnLink, which is known to be non-null in org.fogbowcloud.manager.occi.instance.InstanceDataStore.executeBatchStatement(List, String)<br/>
+<br/>
+<br/>In file InstanceDataStore.java,
+					
+						line 349<br/>In class org.fogbowcloud.manager.occi.instance.InstanceDataStore<br/>In method org.fogbowcloud.manager.occi.instance.InstanceDataStore.executeBatchStatement(List, String)<br/>Value loaded from josnLink<br/>Return value of org.fogbowcloud.manager.occi.JSONHelper.mountLinksJSON(List) of type org.json.JSONArray<br/>Redundant null check at InstanceDataStore.java:[line 349]<br/>Redundant null check at InstanceDataStore.java:[line 349]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of jsonCategories, which is known to be non-null in org.fogbowcloud.manager.occi.instance.InstanceDataStore.executeBatchStatement(List, String)<br/>
+<br/>
+<br/>In file InstanceDataStore.java,
+					
+						line 347<br/>In class org.fogbowcloud.manager.occi.instance.InstanceDataStore<br/>In method org.fogbowcloud.manager.occi.instance.InstanceDataStore.executeBatchStatement(List, String)<br/>Value loaded from jsonCategories<br/>Return value of org.fogbowcloud.manager.occi.JSONHelper.mountCategoriesJSON(List) of type org.json.JSONArray<br/>Redundant null check at InstanceDataStore.java:[line 347]<br/>Redundant null check at InstanceDataStore.java:[line 347]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of josnLink, which is known to be non-null in org.fogbowcloud.manager.occi.instance.InstanceDataStore.insert(FedInstanceState)<br/>
+<br/>
+<br/>In file InstanceDataStore.java,
+					
+						line 114<br/>In class org.fogbowcloud.manager.occi.instance.InstanceDataStore<br/>In method org.fogbowcloud.manager.occi.instance.InstanceDataStore.insert(FedInstanceState)<br/>Value loaded from josnLink<br/>Return value of org.fogbowcloud.manager.occi.JSONHelper.mountLinksJSON(List) of type org.json.JSONArray<br/>Redundant null check at InstanceDataStore.java:[line 114]<br/>Redundant null check at InstanceDataStore.java:[line 114]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of jsonCategories, which is known to be non-null in org.fogbowcloud.manager.occi.instance.InstanceDataStore.insert(FedInstanceState)<br/>
+<br/>
+<br/>In file InstanceDataStore.java,
+					
+						line 112<br/>In class org.fogbowcloud.manager.occi.instance.InstanceDataStore<br/>In method org.fogbowcloud.manager.occi.instance.InstanceDataStore.insert(FedInstanceState)<br/>Value loaded from jsonCategories<br/>Return value of org.fogbowcloud.manager.occi.JSONHelper.mountCategoriesJSON(List) of type org.json.JSONArray<br/>Redundant null check at InstanceDataStore.java:[line 112]<br/>Redundant null check at InstanceDataStore.java:[line 112]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of josnLink, which is known to be non-null in org.fogbowcloud.manager.occi.instance.InstanceDataStore.update(FedInstanceState)<br/>
+<br/>
+<br/>In file InstanceDataStore.java,
+					
+						line 175<br/>In class org.fogbowcloud.manager.occi.instance.InstanceDataStore<br/>In method org.fogbowcloud.manager.occi.instance.InstanceDataStore.update(FedInstanceState)<br/>Value loaded from josnLink<br/>Return value of org.fogbowcloud.manager.occi.JSONHelper.mountLinksJSON(List) of type org.json.JSONArray<br/>Redundant null check at InstanceDataStore.java:[line 175]<br/>Redundant null check at InstanceDataStore.java:[line 175]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of jsonCategories, which is known to be non-null in org.fogbowcloud.manager.occi.instance.InstanceDataStore.update(FedInstanceState)<br/>
+<br/>
+<br/>In file InstanceDataStore.java,
+					
+						line 173<br/>In class org.fogbowcloud.manager.occi.instance.InstanceDataStore<br/>In method org.fogbowcloud.manager.occi.instance.InstanceDataStore.update(FedInstanceState)<br/>Value loaded from jsonCategories<br/>Return value of org.fogbowcloud.manager.occi.JSONHelper.mountCategoriesJSON(List) of type org.json.JSONArray<br/>Redundant null check at InstanceDataStore.java:[line 173]<br/>Redundant null check at InstanceDataStore.java:[line 173]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of org.fogbowcloud.manager.occi.model.Token.attributes, which is known to be non-null in org.fogbowcloud.manager.occi.model.Token.equals(Object)<br/>
+<br/>
+<br/>In file Token.java,
+					
+						line 114<br/>In class org.fogbowcloud.manager.occi.model.Token<br/>In method org.fogbowcloud.manager.occi.model.Token.equals(Object)<br/>Value loaded from field org.fogbowcloud.manager.occi.model.Token.attributes<br/>Redundant null check at Token.java:[line 114]<br/>Redundant null check at Token.java:[line 114]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of org.fogbowcloud.manager.occi.order.Order.xOCCIAtt, which is known to be non-null in org.fogbowcloud.manager.occi.order.Order.equals(Object)<br/>
+<br/>
+<br/>In file Order.java,
+					
+						line 281<br/>In class org.fogbowcloud.manager.occi.order.Order<br/>In method org.fogbowcloud.manager.occi.order.Order.equals(Object)<br/>Value loaded from field org.fogbowcloud.manager.occi.order.Order.xOCCIAtt<br/>Redundant null check at Order.java:[line 281]<br/>Redundant null check at Order.java:[line 281]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of currentOrders, which is known to be non-null in org.fogbowcloud.manager.occi.order.OrderServerResource.post()<br/>
+<br/>
+<br/>In file OrderServerResource.java,
+					
+						line 321<br/>In class org.fogbowcloud.manager.occi.order.OrderServerResource<br/>In method org.fogbowcloud.manager.occi.order.OrderServerResource.post()<br/>Value loaded from currentOrders<br/>Return value of org.fogbowcloud.manager.occi.OCCIApplication.createOrders(String, List, Map) of type java.util.List<br/>Redundant null check at OrderServerResource.java:[line 321]<br/>Redundant null check at OrderServerResource.java:[line 321]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of storageLinkbyUser, which is known to be non-null in org.fogbowcloud.manager.occi.storage.StorageLinkRepository.get(String, String)<br/>
+<br/>
+<br/>In file StorageLinkRepository.java,
+					
+						line 67<br/>In class org.fogbowcloud.manager.occi.storage.StorageLinkRepository<br/>In method org.fogbowcloud.manager.occi.storage.StorageLinkRepository.get(String, String)<br/>Value loaded from storageLinkbyUser<br/>Return value of org.fogbowcloud.manager.occi.storage.StorageLinkRepository.getByUser(String) of type java.util.List<br/>Redundant null check at StorageLinkRepository.java:[line 67]<br/>Redundant null check at StorageLinkRepository.java:[line 67]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of resourcesInfo, which is known to be non-null in org.fogbowcloud.manager.xmpp.GetRemoteUserQuotaHandler.handle(IQ)<br/>
+<br/>
+<br/>In file GetRemoteUserQuotaHandler.java,
+					
+						line 30<br/>In class org.fogbowcloud.manager.xmpp.GetRemoteUserQuotaHandler<br/>In method org.fogbowcloud.manager.xmpp.GetRemoteUserQuotaHandler.handle(IQ)<br/>Value loaded from resourcesInfo<br/>Return value of org.fogbowcloud.manager.core.ManagerController.getResourceInfoForRemoteMember(String, String) of type org.fogbowcloud.manager.core.model.ResourcesInfo<br/>Redundant null check at GetRemoteUserQuotaHandler.java:[line 30]<br/>Redundant null check at GetRemoteUserQuotaHandler.java:[line 30]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Redundant nullcheck of response, which is known to be non-null in org.fogbowcloud.manager.xmpp.ManagerPacketHelper.remoteStorageLink(StorageLinkRepository$StorageLink, String, Token, PacketSender)<br/>
+<br/>
+<br/>In file ManagerPacketHelper.java,
+					
+						line 235<br/>In class org.fogbowcloud.manager.xmpp.ManagerPacketHelper<br/>In method org.fogbowcloud.manager.xmpp.ManagerPacketHelper.remoteStorageLink(StorageLinkRepository$StorageLink, String, Token, PacketSender)<br/>Value loaded from response<br/>Return value of org.jamppa.component.PacketSender.syncSendPacket(Packet) of type org.xmpp.packet.Packet<br/>Redundant null check at ManagerPacketHelper.java:[line 235]<br/>Redundant null check at ManagerPacketHelper.java:[line 235]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exception is caught when Exception is not thrown in org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin.generateImageTemplate(Map)<br/>
+<br/>
+<br/>In file OpenNebulaComputePlugin.java,
+					
+						line 642<br/>In class org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaComputePlugin.generateImageTemplate(Map)<br/>At OpenNebulaComputePlugin.java:[line 642]<br/>At OpenNebulaComputePlugin.java:[line 642]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exception is caught when Exception is not thrown in org.fogbowcloud.manager.core.plugins.identity.x509.X509IdentityPlugin.isValid(List)<br/>
+<br/>
+<br/>In file X509IdentityPlugin.java,
+					
+						line 151<br/>In class org.fogbowcloud.manager.core.plugins.identity.x509.X509IdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.x509.X509IdentityPlugin.isValid(List)<br/>At X509IdentityPlugin.java:[line 151]<br/>At X509IdentityPlugin.java:[line 151]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exception is caught when Exception is not thrown in org.fogbowcloud.manager.core.plugins.storage.opennebula.OpenNebulaStoragePlugin.generateVolumeTemplate(Map)<br/>
+<br/>
+<br/>In file OpenNebulaStoragePlugin.java,
+					
+						line 136<br/>In class org.fogbowcloud.manager.core.plugins.storage.opennebula.OpenNebulaStoragePlugin<br/>In method org.fogbowcloud.manager.core.plugins.storage.opennebula.OpenNebulaStoragePlugin.generateVolumeTemplate(Map)<br/>At OpenNebulaStoragePlugin.java:[line 136]<br/>At OpenNebulaStoragePlugin.java:[line 136]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Exception is caught when Exception is not thrown in org.fogbowcloud.manager.core.RequirementsHelper.matches(Flavor, String)<br/>
+<br/>
+<br/>In file RequirementsHelper.java,
+					
+						line 134<br/>In class org.fogbowcloud.manager.core.RequirementsHelper<br/>In method org.fogbowcloud.manager.core.RequirementsHelper.matches(Flavor, String)<br/>At RequirementsHelper.java:[line 134]<br/>At RequirementsHelper.java:[line 134]</p>
+</td>
+</tr>
+<tr class="tablerow0">
+<td width="20%" valign="top">
+<a href="#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Return value of org.fogbowcloud.manager.occi.model.Token.getAccessId() ignored, but method has no side effect<br/>
+<br/>
+<br/>In file AzureIdentityPlugin.java,
+					
+						line 41<br/>In class org.fogbowcloud.manager.core.plugins.identity.azure.AzureIdentityPlugin<br/>In method org.fogbowcloud.manager.core.plugins.identity.azure.AzureIdentityPlugin.createTokens(Properties)<br/>Called method org.fogbowcloud.manager.occi.model.Token.getAccessId()<br/>At AzureIdentityPlugin.java:[line 41]<br/>At AzureIdentityPlugin.java:[line 41]</p>
+</td>
+</tr>
+<tr class="tablerow1">
+<td width="20%" valign="top">
+<a href="#UC_USELESS_OBJECT">Useless object created</a>
+</td>
+<td width="10%" valign="top">Medium</td>
+<td width="70%">
+<p>Useless object stored in variable occiCategories of method org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin.getExtraHeaders(List, Map, Token)<br/>
+<br/>
+<br/>In file OpenNebulaOCCIComputePlugin.java,
+					
+						line 58<br/>In class org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin<br/>In method org.fogbowcloud.manager.core.plugins.compute.opennebula.OpenNebulaOCCIComputePlugin.getExtraHeaders(List, Map, Token)<br/>Value occiCategories<br/>Type java.util.ArrayList<br/>At OpenNebulaOCCIComputePlugin.java:[line 58]</p>
+</td>
+</tr>
+</table>
+<p>
+<br/>
+<br/>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h1>
+<a name="Details">Warning Types</a>
+</h1>
+<h2>
+<a name="DM_BOXED_PRIMITIVE_FOR_PARSING">Boxing/unboxing to parse a primitive</a>
+</h2>
+
+  <p>A boxed primitive is created from a String, just to extract the unboxed primitive value.
+  It is more efficient to just call the static parseXXX method.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DM_BOXED_PRIMITIVE_TOSTRING">Method allocates a boxed primitive just to call toString</a>
+</h2>
+
+  <p>A boxed primitive is allocated just to call toString(). It is more effective to just use the static
+  form of toString which takes the primitive value. So,</p>
+  <table>
+     <tr><th>Replace...</th><th>With this...</th></tr>
+     <tr><td>new Integer(1).toString()</td><td>Integer.toString(1)</td></tr>
+     <tr><td>new Long(1).toString()</td><td>Long.toString(1)</td></tr>
+     <tr><td>new Float(1.0).toString()</td><td>Float.toString(1.0)</td></tr>
+     <tr><td>new Double(1.0).toString()</td><td>Double.toString(1.0)</td></tr>
+     <tr><td>new Byte(1).toString()</td><td>Byte.toString(1)</td></tr>
+     <tr><td>new Short(1).toString()</td><td>Short.toString(1)</td></tr>
+     <tr><td>new Boolean(true).toString()</td><td>Boolean.toString(true)</td></tr>
+  </table>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DM_NUMBER_CTOR">Method invokes inefficient Number constructor; use static valueOf instead</a>
+</h2>
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 1.5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DE_MIGHT_IGNORE">Method might ignore exception</a>
+</h2>
+
+  <p> This method might ignore an exception.&nbsp; In general, exceptions
+  should be handled or reported in some way, or they should be thrown
+  out of the method.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DLS_DEAD_LOCAL_STORE">Dead store to local variable</a>
+</h2>
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because FindBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DM_STRING_VOID_CTOR">Method invokes inefficient new String() constructor</a>
+</h2>
+
+  <p> Creating a new <code>java.lang.String</code> object using the
+  no-argument constructor wastes memory because the object so created will
+  be functionally indistinguishable from the empty string constant
+  <code>""</code>.&nbsp; Java guarantees that identical string constants
+  will be represented by the same <code>String</code> object.&nbsp; Therefore,
+  you should just use the empty string constant directly.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DM_STRING_CTOR">Method invokes inefficient new String(String) constructor</a>
+</h2>
+
+  <p> Using the <code>java.lang.String(String)</code> constructor wastes memory
+  because the object so constructed will be functionally indistinguishable
+  from the <code>String</code> passed as a parameter.&nbsp; Just use the
+  argument <code>String</code> directly.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DM_DEFAULT_ENCODING">Reliance on default encoding</a>
+</h2>
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="DM_NEXTINT_VIA_NEXTDOUBLE">Use the nextInt method of Random rather than nextDouble to generate a random integer</a>
+</h2>
+
+  <p>If <code>r</code> is a <code>java.util.Random</code>, you can generate a random number from <code>0</code> to <code>n-1</code>
+using <code>r.nextInt(n)</code>, rather than using <code>(int)(r.nextDouble() * n)</code>.
+</p>
+<p>The argument to nextInt must be positive. If, for example, you want to generate a random
+value from -99 to 0, use <code>-r.nextInt(100)</code>.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP">May expose internal representation by returning reference to mutable object</a>
+</h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+</h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="HE_EQUALS_USE_HASHCODE">Class defines equals() and uses Object.hashCode()</a>
+</h2>
+
+  <p> This class overrides <code>equals(Object)</code>, but does not
+  override <code>hashCode()</code>, and inherits the implementation of
+  <code>hashCode()</code> from <code>java.lang.Object</code> (which returns
+  the identity hash code, an arbitrary value assigned to the object
+  by the VM).&nbsp; Therefore, the class is very likely to violate the
+  invariant that equal objects must have equal hashcodes.</p>
+
+<p>If you don't think instances of this class will ever be inserted into a HashMap/HashTable,
+the recommended <code>hashCode</code> implementation to use is:</p>
+<pre>public int hashCode() {
+  assert false : "hashCode not designed";
+  return 42; // any arbitrary constant will do
+  }</pre>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="HE_USE_OF_UNHASHABLE_CLASS">Use of class without a hashCode() method in a hashed data structure</a>
+</h2>
+
+  <p> A class defines an equals(Object)  method but not a hashCode() method,
+and thus doesn't fulfill the requirement that equal objects have equal hashCodes.
+An instance of this class is used in a hash data structure, making the need to
+fix this problem of highest importance.
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="IS2_INCONSISTENT_SYNC">Inconsistent synchronization</a>
+</h2>
+
+  <p> The fields of this class appear to be accessed inconsistently with respect
+  to synchronization.&nbsp; This bug report indicates that the bug pattern detector
+  judged that
+  </p>
+  <ul>
+  <li> The class contains a mix of locked and unlocked accesses,</li>
+  <li> The class is <b>not</b> annotated as javax.annotation.concurrent.NotThreadSafe,</li>
+  <li> At least one locked access was performed by one of the class's own methods, and</li>
+  <li> The number of unsynchronized field accesses (reads and writes) was no more than
+       one third of all accesses, with writes being weighed twice as high as reads</li>
+  </ul>
+
+  <p> A typical bug matching this bug pattern is forgetting to synchronize
+  one of the methods in a class that is intended to be thread-safe.</p>
+
+  <p> You can select the nodes labeled "Unsynchronized access" to show the
+  code locations where the detector believed that a field was accessed
+  without synchronization.</p>
+
+  <p> Note that there are various sources of inaccuracy in this detector;
+  for example, the detector cannot statically detect all situations in which
+  a lock is held.&nbsp; Also, even when the detector is accurate in
+  distinguishing locked vs. unlocked accesses, the code in question may still
+  be correct.</p>
+
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="MS_SHOULD_BE_FINAL">Field isn't final but should be</a>
+</h2>
+
+   <p>
+This static field public but not final, and
+could be changed by malicious code or
+        by accident from another package.
+        The field could be made final to avoid
+        this vulnerability.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="MS_PKGPROTECT">Field should be package protected</a>
+</h2>
+
+  <p> A mutable static field could be changed by malicious code or
+   by accident.
+   The field could be made package protected to avoid
+   this vulnerability.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="NP_LOAD_OF_KNOWN_NULL_VALUE">Load of known null value</a>
+</h2>
+
+  <p> The variable referenced at this point is known to be null due to an earlier
+   check against null. Although this is valid, it might be a mistake (perhaps you
+intended to refer to a different variable, or perhaps the earlier check to see if the
+variable is null should have been a check to see if it was non-null).
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="NP_NULL_ON_SOME_PATH">Possible null pointer dereference</a>
+</h2>
+
+<p> There is a branch of statement that, <em>if executed,</em>  guarantees that
+a null value will be dereferenced, which
+would generate a <code>NullPointerException</code> when the code is executed.
+Of course, the problem might be that the branch or statement is infeasible and that
+the null pointer exception can't ever be executed; deciding that is beyond the ability of FindBugs.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE">Possible null pointer dereference due to return value of called method</a>
+</h2>
+      
+<p> The return value from a method is dereferenced without a null check,
+and the return value of that method is one that should generally be checked
+for null.  This may lead to a <code>NullPointerException</code> when the code is executed.
+</p>
+      
+   
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="NP_NULL_ON_SOME_PATH_EXCEPTION">Possible null pointer dereference in method on exception path</a>
+</h2>
+
+<p> A reference value which is null on some exception control path is
+dereferenced here.&nbsp; This may lead to a <code>NullPointerException</code>
+when the code is executed.&nbsp;
+Note that because FindBugs currently does not prune infeasible exception paths,
+this may be a false warning.</p>
+
+<p> Also note that FindBugs considers the default case of a switch statement to
+be an exception path, since the default case is often infeasible.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="NS_DANGEROUS_NON_SHORT_CIRCUIT">Potentially dangerous use of non-short-circuit logic</a>
+</h2>
+
+  <p> This code seems to be using non-short-circuit logic (e.g., &amp;
+or |)
+rather than short-circuit logic (&amp;&amp; or ||). In addition,
+it seem possible that, depending on the value of the left hand side, you might not
+want to evaluate the right hand side (because it would have side effects, could cause an exception
+or could be expensive.</p>
+<p>
+Non-short-circuit logic causes both sides of the expression
+to be evaluated even when the result can be inferred from
+knowing the left-hand side. This can be less efficient and
+can result in errors if the left-hand side guards cases
+when evaluating the right-hand side can generate an error.
+</p>
+
+<p>See <a href="http://java.sun.com/docs/books/jls/third_edition/html/expressions.html#15.22.2">the Java
+Language Specification</a> for details
+
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="OBL_UNSATISFIED_OBLIGATION">Method may fail to clean up stream or resource</a>
+</h2>
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          To send feedback, either:
+          </p>
+          <ul>
+            <li>send email to findbugs@cs.umd.edu</li>
+            <li>file a bug report: <a href="http://findbugs.sourceforge.net/reportingBugs.html">http://findbugs.sourceforge.net/reportingBugs.html</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE">Method may fail to clean up stream or resource on checked exception</a>
+</h2>
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          To send feedback, either:
+          </p>
+          <ul>
+            <li>send email to findbugs@cs.umd.edu</li>
+            <li>file a bug report: <a href="http://findbugs.sourceforge.net/reportingBugs.html">http://findbugs.sourceforge.net/reportingBugs.html</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="ODR_OPEN_DATABASE_RESOURCE">Method may fail to close database resource</a>
+</h2>
+
+<p> The method creates a database resource (such as a database connection
+or row set), does not assign it to any
+fields, pass it to other methods, or return it, and does not appear to close
+the object on all paths out of the method.&nbsp; Failure to
+close database resources on all paths out of a method may
+result in poor performance, and could cause the application to
+have problems communicating with the database.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE">Nullcheck of value previously dereferenced</a>
+</h2>
+
+<p> A value is checked here to see whether it is null, but this value can't
+be null because it was previously dereferenced and if it were null a null pointer
+exception would have occurred at the earlier dereference.
+Essentially, this code and the previous dereference
+disagree as to whether this value is allowed to be null. Either the check is redundant
+or the previous dereference is erroneous.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">Redundant nullcheck of value known to be non-null</a>
+</h2>
+
+<p> This method contains a redundant check of a known non-null value against
+the constant null.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+</h2>
+  
+  <p>
+  This method uses a try-catch block that catches Exception objects, but Exception is not
+  thrown within the try block, and RuntimeException is not explicitly caught.  It is a common bug pattern to
+  say try { ... } catch (Exception e) { something } as a shorthand for catching a number of types of exception
+  each of whose catch blocks is identical, but this construct also accidentally catches RuntimeException as well,
+  masking potential bugs.
+  </p>
+  <p>A better approach is to either explicitly catch the specific exceptions that are thrown,
+  or to explicitly catch RuntimeException exception, rethrow it, and then catch all non-Runtime Exceptions, as shown below:</p>
+  <pre>
+  try {
+    ...
+  } catch (RuntimeException e) {
+    throw e;
+  } catch (Exception e) {
+    ... deal with all non-runtime exceptions ...
+  }</pre>
+  
+     
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">Method ignores exceptional return value</a>
+</h2>
+
+   <p> This method returns a value that is not checked. The return value should be checked
+since it can indicate an unusual or unexpected function execution. For
+example, the <code>File.delete()</code> method returns false
+if the file could not be successfully deleted (rather than
+throwing an Exception).
+If you don't check the result, you won't notice if the method invocation
+signals unexpected behavior by returning an atypical return value.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT">Return value of method without side effect is ignored</a>
+</h2>
+
+<p>This code calls a method and ignores the return value. However our analysis shows that
+the method (including its implementations in subclasses if any) does not produce any effect 
+other than return value. Thus this call can be removed.
+</p>
+<p>We are trying to reduce the false positives as much as possible, but in some cases this warning might be wrong.
+Common false-positive cases include:</p>
+<p>- The method is designed to be overridden and produce a side effect in other projects which are out of the scope of the analysis.</p>
+<p>- The method is called to trigger the class loading which may have a side effect.</p>
+<p>- The method is called just to get some exception.</p>
+<p>If you feel that our assumption is incorrect, you can use a @CheckReturnValue annotation
+to instruct FindBugs that ignoring the return value of this method is acceptable.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SBSC_USE_STRINGBUFFER_CONCATENATION">Method concatenates strings using + in a loop</a>
+</h2>
+
+<p> The method seems to be building a String using concatenation in a loop.
+In each iteration, the String is converted to a StringBuffer/StringBuilder,
+   appended to, and converted back to a String.
+   This can lead to a cost quadratic in the number of iterations,
+   as the growing string is recopied in each iteration. </p>
+
+<p>Better performance can be obtained by using
+a StringBuffer (or StringBuilder in Java 1.5) explicitly.</p>
+
+<p> For example:</p>
+<pre>
+  // This is bad
+  String s = "";
+  for (int i = 0; i &lt; field.length; ++i) {
+    s = s + field[i];
+  }
+
+  // This is better
+  StringBuffer buf = new StringBuffer();
+  for (int i = 0; i &lt; field.length; ++i) {
+    buf.append(field[i]);
+  }
+  String s = buf.toString();
+</pre>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE">Comparator doesn't implement Serializable</a>
+</h2>
+
+  <p> This class implements the <code>Comparator</code> interface. You
+should consider whether or not it should also implement the <code>Serializable</code>
+interface. If a comparator is used to construct an ordered collection
+such as a <code>TreeMap</code>, then the <code>TreeMap</code>
+will be serializable only if the comparator is also serializable.
+As most comparators have little or no state, making them serializable
+is generally easy and good defensive programming.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SIC_INNER_SHOULD_BE_STATIC">Should be a static inner class</a>
+</h2>
+
+  <p> This class is an inner class, but does not use its embedded reference
+  to the object which created it.&nbsp; This reference makes the instances
+  of the class larger, and may keep the reference to the creator object
+  alive longer than necessary.&nbsp; If possible, the class should be
+   made static.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING">A prepared statement is generated from a nonconstant String</a>
+</h2>
+
+  <p>The code creates an SQL prepared statement from a nonconstant String.
+If unchecked, tainted data from a user is used in building this String, SQL injection could
+be used to make the prepared statement do something unexpected and undesirable.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="SS_SHOULD_BE_STATIC">Unread field: should this field be static?</a>
+</h2>
+
+  <p> This class contains an instance final field that
+   is initialized to a compile-time static value.
+   Consider making the field static.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">Write to static field from instance method</a>
+</h2>
+
+  <p> This instance method writes to a static field. This is tricky to get
+correct if multiple instances are being manipulated,
+and generally bad practice.
+</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="UC_USELESS_OBJECT">Useless object created</a>
+</h2>
+
+<p>Our analysis shows that this object is useless. 
+It's created and modified, but its value never go outside of the method or produce any side-effect.
+Either there is a mistake and object was intended to be used or it can be removed.</p>
+<p>This analysis rarely produces false-positives. Common false-positive cases include:</p>
+<p>- This object used to implicitly throw some obscure exception.</p>
+<p>- This object used as a stub to generalize the code.</p>
+<p>- This object used to hold strong references to weak/soft-referenced objects.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="UWF_NULL_FIELD">Field only ever set to null</a>
+</h2>
+
+  <p> All writes to this field are of the constant value null, and thus
+all reads of the field will return null.
+Check for errors, or remove it if it is useless.</p>
+
+    
+<p>
+<br/>
+<br/>
+</p>
+<h2>
+<a name="WMI_WRONG_MAP_ITERATOR">Inefficient use of keySet iterator instead of entrySet iterator</a>
+</h2>
+
+<p> This method accesses the value of a Map entry, using a key that was retrieved from
+a keySet iterator. It is more efficient to use an iterator on the entrySet of the map, to avoid the
+Map.get(key) lookup.</p>
+
+        
+<p>
+<br/>
+<br/>
+</p>
+</body>
+</html>
