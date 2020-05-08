@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+  <title>kaio - an unassuming geek - Linux man page</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<pre class="manheader">KAIO(8)                           Linux User's Manual                            KAIO(8)
+</pre>
+<h1>NAME</h1>
+<p class="subtext">
+  Kaio Oliveira - an unassuming geek
+</p>
+
+<h1>SYNOPSIS</h1>
+<p class="subtext">
+  kaio [--admin systems] [--contributor] [--developer] [--other]<br />
+  [--student] [--teaching]
+</p>
+
+<h1>SUMMARY</h1>
+<p class="subtext">
+  I'm a undergraduate student of Computer Science course by the Federal University of Campina Grande.
+  I have experience in Linux, system administration, cloud computing, application/web development,
+  infrastructure, networking, and distributed systems architecture design. I'm familiar with,
+  and a huge supporter of, the DevOps culture.
+</p>
+<p class="subtext">
+  I have facility to work in groups and collaborate with the increase of team performance, interested
+  in continuous learning, documentation of procedures, planning activities and continuous research about
+  new tools and technologies.
+</p>
+<h1>OPTIONS</h1>
+<p class="subtext">
+  --admin systems
+</p>
+<p class="doublesubtext">
+  Good experience with the configuration, hardening, and maintenance of various Linux distributions,
+  including:
+</p>
+<p class="triplesubtext">
+  * Debian, Ubuntu<br />
+  * Red Hat Enterprise Linux, Fedora, CentOS<br />
+</p>
+<p class="doublesubtext">
+  Able to set up vital Linux infrastructure components including load balancers, DNS servers, and
+  web/application servers.
+</p>
+<p class="doublesubtext">
+  Comfortable with installation and configuration of applications and key network services (Apache,
+  NGINX, NFS, DHCP, SSH); virtualized systems (KVM, QEMU); monitoring tools (Zabbix).
+</p>
+<p class="doublesubtext">
+  Experienced in rapid deployment and configuration management technologies such as Puppet, and Ansible.
+  Experienced in deploying OpenStack environments, mostly with OpenStack-Ansible.
+</p>
+<p class="doublesubtext">
+  Proficient with KVM and the libvirt tool stack.
+</p>
+<p class="subtext">
+  --contributor
+</p>
+<p class="doublesubtext">
+  I've contributed to a few <a href="https://www.openstack.org/" target=_blank>OpenStack</a> projects, and I'm a mentioned ATC
+  at <a href="https://www.openstack.org/software/queens/" target=_blank>OpenStack Queens</a> release contributor
+  list. I've mainly fixed bugs, and helped removing deprecated behaviour in some cases.
+</p>
+<p class="doublesubtext">
+  Most efforts are related to the following projects:
+</p>
+<p class="triplesubtext">
+  * <a href="https://github.com/openstack/openstack-ansible-os_monasca" target=_blank>openstack-ansible-os_monasca</a><br />
+  * <a href="https://github.com/openstack/openstack-ansible-os_monasca-agent" target=_blank>openstack-ansible-os_monasca-agent</a><br />
+  * <a href="https://github.com/openstack/monasca-agent" target=_blank>monasca-agent</a><br />
+</p>
+<p class="doublesubtext">
+  OpenStack contribution summary at <a href="http://stackalytics.com/?user_id=kaiokassiano&metric=all&release=all" target=_blank>Stackalytics</a>.
+</p>
+<p class="subtext">
+  --developer
+</p>
+<p class="doublesubtext">
+  <a href="http://www.bazooca.com.br" target=_blank>bazooca</a><br/ >
+  A same-day-delivery and next-day-delivery solution, for e-commerce purchases in the city of São Paulo. I did work mostly with Microsoft technologies,
+  such as ASP.NET, .NET Framework and SQL Server. Heavily used Microsoft Azure services, TFS, and Microsoft Azure WebJobs.
+</p>
+<p class="doublesubtext">
+  <a>autonomic</a><br />
+  Researching and developing an autonomic solution to optimize datacenter power usage effectiveness; Implementing filters and weighers used by the
+  OpenStack nova-scheduler to obtain a better VM placement; Deploying and operating a small~medium OpenStack cloud using OpenStack-Ansible,
+  along with monitoring and shared storage services.
+</p>
+
+<p class="subtext">
+  --other
+</p>
+<p class="doublesubtext">
+  ...
+</p>
+<p class="triplesubtext">
+  ...
+</p>
+<p class="doublesubtext">
+  ...
+</p>
+
+<h1>HISTORY</h1>
+<p class="subtext bottomcut">
+  * ...</a>
+</p>
+<p class="doublesubtext">
+  - ...<br>
+  - ...<br>
+  - ...<br>
+  - ...<br>
+  - ...<br>
+  - ...<br>
+  - ...
+</p>
+<p class="subtext bottomcut">
+  ...
+</p>
+<p class="doublesubtext">
+  ...
+</p>
+<p class="subtext bottomcut">
+  * ...
+</p>
+<p class="doublesubtext">
+  - ...
+</p>
+
+<h1>SEE ALSO</h1>
+<p class="subtext">
+  * E-mail:      kaio dot kassiano dot oliveira at gmail dot com<br />
+  * LinkedIn:	 <a href="https://www.linkedin.com/in/kaiokassiano/">http://www.linkedin.com/in/kaiokassiano/</a><br />
+  * Lattes:      <a href="http://lattes.cnpq.br/2823303331057543">http://lattes.cnpq.br/2823303331057543</a><br />
+</p><br><br>
+
+<pre class="manheader">Kaio Oliveira                          2018-03-05                                  KAIO(8)
+</pre>
+
+<p class="footer">
+  &copy; 2018 Kaio Oliveira
+</p>
+</body>
+</html>
